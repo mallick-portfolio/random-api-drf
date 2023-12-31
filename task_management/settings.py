@@ -129,7 +129,7 @@ USE_TZ = True
 SECRET_KEY = 'django-insecure-=!@!9#lb*_@25vi54rck=8-qqavliv6$y59+gwf=+nxn(2k3r8'
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=10),
 }
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

@@ -62,3 +62,14 @@ class LoginAPIView(APIView):
 
     except Exception as e:
       return Response({'message':'fail','error':e,"status": status.HTTP_500_INTERNAL_SERVER_ERROR})
+
+
+class LogoutAPIView(APIView):
+  def post(self, request):
+    logout(request)
+    return Response({
+        "success": True,
+        "status": status.HTTP_200_OK,
+        'message': "Successfully Logged out!!!",
+        })
+
