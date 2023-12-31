@@ -9,8 +9,8 @@ class Board(models.Model):
   authorize_users = models.ManyToManyField(CustomUser, related_name='boards')
 
   # time stapm
-  created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
-  updated_at = models.DateTimeField(auto_now=False, auto_now_add=False)
+  created_at = models.DateTimeField(auto_now=False, auto_now_add=True, null=True, blank=True)
+  updated_at = models.DateTimeField(auto_now=False, auto_now_add=False,null=True, blank=True)
 
 
 class TaskItem(models.Model):

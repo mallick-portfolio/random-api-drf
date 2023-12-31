@@ -33,6 +33,7 @@ class RegistrationAPIView(APIView):
 
 class LoginAPIView(APIView):
   def post(self, request):
+    print(request.data)
     try:
       rd = request.data
       if 'email' not in rd or 'password' not in rd:

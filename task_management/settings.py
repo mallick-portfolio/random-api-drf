@@ -29,7 +29,26 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'http://xxx.xxx.xxx.xxx:portNum',
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+# Any headers you wanted to be visible by the ReactJS app.
+CORS_EXPOSE_HEADERS = [
+    'Date'
+]
 
 
 # Application definition
@@ -44,10 +63,13 @@ INSTALLED_APPS = [
     'rest_framework',
     # custom app
     'accounts',
-    'task_board'
+    'task_board',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,6 +77,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'task_management.urls'
