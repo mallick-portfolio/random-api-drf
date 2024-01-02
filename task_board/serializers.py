@@ -3,11 +3,13 @@ from task_board.models import Board, TaskItem, Task
 from accounts.models import CustomUser
 
 class BoardSerializer(serializers.ModelSerializer):
+
   user = serializers.SerializerMethodField('get_user')
-  authorize_users = serializers.SerializerMethodField('get_members')
+  authorize_users = serializers.SerializerMethodField('get_authorize_users')
   class Meta:
     model = Board
     fields = "__all__"
+    read_only_fields = ['user', 'authorize_users']
 
   @staticmethod
   def get_user(obj):
@@ -16,7 +18,7 @@ class BoardSerializer(serializers.ModelSerializer):
 
 
   @staticmethod
-  def get_members(obj):
+  def get_authorize_users(obj):
     members = []
     for id in obj.authorize_users:
       data = CustomUser.objects.filter(id=id).values('id', 'first_name', 'last_name', 'email').first()

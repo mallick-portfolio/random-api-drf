@@ -6,6 +6,8 @@ from rest_framework import status
 from django.contrib.auth import authenticate, login, logout
 from . import helpers
 from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.authentication import JWTAuthentication
+
 from accounts.models import CustomUser
 # Create your views here.
 
@@ -41,7 +43,6 @@ class LoginAPIView(APIView):
       if 'email' not in rd or 'password' not in rd:
         return Response({
           "success": False,
-          "status": status.HTTP_400_BAD_REQUEST,
           'message': "Invalid Credentials",
         })
       email = rd['email']
@@ -52,14 +53,12 @@ class LoginAPIView(APIView):
         token = helpers.get_tokens_for_user(user)
         return Response({
           "success": True,
-          "status": status.HTTP_200_OK,
           'message': "Login successfull!!!",
           "token": token
         })
       else:
         return Response({
           "success": False,
-          "status": status.HTTP_401_UNAUTHORIZED,
           'message': "Invalid Credentials",
         })
 
@@ -69,31 +68,40 @@ class LoginAPIView(APIView):
 
 class LogoutAPIView(APIView):
   permission_classes = [IsAuthenticated]
+  authentication_classes =[JWTAuthentication]
   def post(self, request):
     logout(request)
     return Response({
         "success": True,
-        "status": status.HTTP_200_OK,
         'message': "Successfully Logged out!!!",
         })
 
 class MeAPI(APIView):
+  authentication_classes = [JWTAuthentication]
   permission_classes = [IsAuthenticated]
-  def get(self, request):
-    print(request.user)
-    user = CustomUser.objects.filter(email=request.user.email).values('id', 'first_name', 'last_name', 'phone', 'email', 'gender').first()
-    data = UserSerializer(user, many=False).data
 
-    if user is not None:
+  def get(self, request):
+    try:
+      user = CustomUser.objects.filter(email=request.user.email).values('id', 'first_name', 'last_name', 'phone', 'email', 'gender').first()
+      data = UserSerializer(user, many=False).data
+
+      if user is not None:
+        return Response({
+          "success": True,
+          "status": status.HTTP_200_OK,
+          'message': "Profile retrived successfully!!!",
+          "data":data
+          })
+      else:
+        return Response({
+          "success": False,
+          "status": status.HTTP_404_NOT_FOUND,
+          'message': "Invalid user",
+          })
+    except Exception as e:
       return Response({
-        "success": True,
-        "status": status.HTTP_200_OK,
-        'message': "Profile retrived successfully!!!",
-        "data":data
-        })
-    else:
-      return Response({
-        "success": False,
-        "status": status.HTTP_404_NOT_FOUND,
-        'message': "Invalid user",
-        })
+          "success": False,
+          "status": status.HTTP_404_NOT_FOUND,
+          'message': "Invalid user",
+          "error": f"the following error are : {e}"
+          })
