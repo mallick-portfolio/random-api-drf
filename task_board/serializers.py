@@ -18,14 +18,23 @@ class BoardSerializer(serializers.ModelSerializer):
   @staticmethod
   def get_members(obj):
     members = []
-    print(obj.authorize_users)
     for id in obj.authorize_users:
       data = CustomUser.objects.filter(id=id).values('id', 'first_name', 'last_name', 'email').first()
       members.append(data)
     return members
 
 
+class BoardUpdateSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Board
+    fields = ['title', 'description', 'authorize_users']
 
+  def update(self, instance, validated_data):
+    instance.title = validated_data.get('title',instance.title)
+    instance.description = validated_data.get('description',instance.description)
+    instance.authorize_users = validated_data.get('authorize_users',instance.authorize_users)
+    instance.save()
+    return instance
 
 class TaskItemSerializer(serializers.ModelSerializer):
   class Meta:

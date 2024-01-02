@@ -7,11 +7,16 @@ from .managers import CustomUserManager
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
+  GENDER_TYPE = (
+     ('male', 'male'),
+     ('female', 'female'),
+     ('other', 'other'),
+  )
   email = models.EmailField(_("email address"), unique=True, max_length=254)
   username = models.CharField(_("username"), unique=True, max_length=50)
   first_name = models.CharField(_("first name"), max_length=50)
   last_name = models.CharField(_("last name"), max_length=50)
-  date_of_birth = models.DateTimeField(null=True, blank=True)
+  gender = models.CharField(choices = GENDER_TYPE,max_length=20, null=True, blank=True)
   phone = models.CharField(max_length=15, null=True, blank=True)
 
 
