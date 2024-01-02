@@ -20,18 +20,18 @@ class TaskItem(models.Model):
   board = models.ForeignKey(Board, on_delete=models.CASCADE, null=True, blank=True)
 
   # time stapm
-  created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
-  updated_at = models.DateTimeField(auto_now=False, auto_now_add=False)
+  created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+  updated_at = models.DateTimeField(auto_now=False, blank=True, null=True)
 
 
 class Task(models.Model):
   title = models.CharField(max_length=150)
-  banner = models.ImageField(upload_to='taskboard/', max_length=None)
+  banner = models.ImageField(upload_to='taskboard/', max_length=None, null=True, blank=True)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
   task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True)
-   # time stapm
-  created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
-  updated_at = models.DateTimeField(auto_now=False, auto_now_add=False)
+  # time stapm
+  created_at = models.DateTimeField(auto_now_add=True,blank=True, null=True)
+  updated_at = models.DateTimeField(auto_now=False, blank=True, null=True)
 
 
 
