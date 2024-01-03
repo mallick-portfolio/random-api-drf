@@ -18,6 +18,10 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
   last_name = models.CharField(_("last name"), max_length=50)
   gender = models.CharField(choices = GENDER_TYPE,max_length=20, null=True, blank=True)
   phone = models.CharField(max_length=15, null=True, blank=True)
+  is_email_verified = models.BooleanField(default=False)
+
+  otp = models.CharField(max_length=20, blank=True, null=True)
+  otp_created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
 
   is_staff = models.BooleanField(_("is staff"), default=False)

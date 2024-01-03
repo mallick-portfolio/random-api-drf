@@ -7,21 +7,29 @@ from django.contrib.auth import authenticate, login, logout
 from . import helpers
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
+import random
 
 from accounts.models import CustomUser
 # Create your views here.
-
+import traceback
 
 class RegistrationAPIView(APIView):
   def post(self, request):
-    serializer = RegistrationSerializer(data=request.data)
+
+
     try:
+      data = request.data
+      otp = helpers.generate_otp(6)
+      data['otp'] = otp
+      serializer = RegistrationSerializer(data=data)
       if serializer.is_valid():
+        email = request.data['email']
         serializer.save()
+        helpers.send_otp_email(email,data,'Verify OTP Code', './email/verifyEmail.html')
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,
-          'message': "Registration successfull!!!"
+          'message': "Registration successfull!!!. Please check your email."
         })
       else:
         return Response({
@@ -32,6 +40,43 @@ class RegistrationAPIView(APIView):
         })
     except Exception as e:
       return Response({'message':'fail','error':e,"status": status.HTTP_500_INTERNAL_SERVER_ERROR})
+
+
+class VerifyEmailOTP(APIView):
+  def post(self, request):
+    try:
+
+      data = request.data
+      user = CustomUser.objects.filter(email=data['email'],otp=data['otp']).first()
+      print(user)
+      if user is not None:
+        otp_expire = helpers.compare_minute(user.otp_created_at)
+        if not otp_expire:
+          user.is_email_verified = True
+          user.otp = None
+          user.save()
+          return Response({
+            "success": False,
+            'message': "Your email verify successfully!!!",
+            "data": None
+          })
+        else:
+          return Response({
+              "success": False,
+              'message': "Your otp time expire. Please try again!!!",
+            })
+      else:
+        return Response({
+            "success": False,
+            'message': "Invalid otp",
+          })
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
+
+
 
 
 

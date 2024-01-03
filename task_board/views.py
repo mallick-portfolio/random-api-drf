@@ -17,24 +17,31 @@ class BoardAPIView(APIView):
     user = request.user
     if pk is not None:
       board = Board.objects.filter(pk=pk,authorize_users__contains=[user.id]).first()
-      task_item = TaskItem.objects.filter(board=board)
+      print(board)
+      if board is not None:
 
-      serializer = BoardSerializer(board, many=False)
-      data = {}
-      data['board'] = serializer.data
-      data['task_item'] = TaskItemSerializer(task_item, many=True).data
+        task_item = TaskItem.objects.filter(board=board)
+        serializer = BoardSerializer(board, many=False)
+        data = {}
+        data['board'] = serializer.data
+        data['task_item'] = TaskItemSerializer(task_item, many=True).data
 
-      for t in data['task_item']:
-        print(t['id'])
-        task = Task.objects.filter(task_item__id=t['id'])
-        t['tasks'] = TaskSerializer(task, many=True).data
+        for t in data['task_item']:
+          print(t['id'])
+          task = Task.objects.filter(task_item__id=t['id'])
+          t['tasks'] = TaskSerializer(task, many=True).data
 
-      return Response({
-            "success": True,
-            "status": status.HTTP_201_CREATED,
-            'message': "Board details retrived successfully!!!",
-            'data': data
-          })
+        return Response({
+              "success": True,
+              'message': "Board details retrived successfully!!!",
+              'data': data
+            },status=status.HTTP_200_OK)
+      else:
+        return Response({
+            "success": False,
+            'message': "Board not found with the given id!!!",
+            'error': False
+          }, status=status.HTTP_404_NOT_FOUND)
     else:
       board = Board.objects.filter(authorize_users__contains=[user.id])
       serializer = BoardSerializer(board, many=True)
