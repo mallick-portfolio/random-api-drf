@@ -20,12 +20,12 @@ class RegistrationAPIView(APIView):
     try:
       data = request.data
       otp = helpers.generate_otp(6)
-      data['otp'] = otp
+      data['otp'] = int(otp)
       serializer = RegistrationSerializer(data=data)
       if serializer.is_valid():
         email = request.data['email']
         serializer.save()
-        helpers.send_otp_email(email,data,'Verify OTP Code', './email/verifyEmail.html')
+        # helpers.send_otp_email(email,data,'Verify OTP Code', './email/verifyEmail.html')
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,
@@ -56,7 +56,7 @@ class VerifyEmailOTP(APIView):
           user.otp = None
           user.save()
           return Response({
-            "success": False,
+            "success": True,
             'message': "Your email verify successfully!!!",
             "data": None
           })

@@ -6,6 +6,8 @@ from .serializers import (BoardSerializer, TaskItemSerializer, TaskSerializer, B
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from task_board.models import Board, TaskItem, Task
+from django.db import models
+import traceback
 # Create your views here.
 
 
@@ -17,17 +19,15 @@ class BoardAPIView(APIView):
     user = request.user
     if pk is not None:
       board = Board.objects.filter(pk=pk,authorize_users__contains=[user.id]).first()
-      print(board)
       if board is not None:
 
-        task_item = TaskItem.objects.filter(board=board)
+        task_item = TaskItem.objects.filter(board=board).order_by('position')
         serializer = BoardSerializer(board, many=False)
         data = {}
         data['board'] = serializer.data
         data['task_item'] = TaskItemSerializer(task_item, many=True).data
 
         for t in data['task_item']:
-          print(t['id'])
           task = Task.objects.filter(task_item__id=t['id'])
           t['tasks'] = TaskSerializer(task, many=True).data
 
@@ -134,6 +134,11 @@ class TaskItemAPI(APIView):
             "error": True
           })
 
+        max_position = TaskItem.objects.filter(board=board).aggregate(models.Max('position'))['position__max']
+        if max_position is not None:
+          data['position'] = max_position + 1
+        else:
+          data['position'] = 1
 
         serilizer = TaskItemSerializer(data=data)
         if serilizer.is_valid():
@@ -155,6 +160,52 @@ class TaskItemAPI(APIView):
         "success": False,
         "error": f'error is {e}'
           })
+
+  def put(self, request, pk):
+    try:
+      data = request.data
+      task_item = TaskItem.objects.filter(pk=pk, board__id=data['board']).first()
+
+      if task_item is not None:
+        title = data.get('title')
+        new_position = data.get('position')
+        if title is not None:
+          # if TaskItem.objects.filter(board__id=data['board'], title=data['title']).exists():
+          #   return Response({
+          #   "success": True,
+          #   "message": "Task item name already exist. Try with another name!!!",
+          #   "error": False
+          #   })
+
+          task_item.title = data['title']
+        if new_position is not None:
+          current_position = task_item.position
+
+          if current_position < new_position:
+            TaskItem.objects.filter(position__gt=current_position, position__lte=new_position, board=task_item.board).update(position=models.F('position') - 1)
+          elif current_position > new_position:
+            TaskItem.objects.filter(position__lt=current_position, position__gte=new_position, board=task_item.board).update(position=models.F('position') + 1)
+
+          task_item.position = new_position
+          task_item.save()
+
+        return Response({
+          "success": True,
+          "message": "Task item update successfully!!!",
+          "error": False
+          })
+      else:
+        return Response({
+          "success": False,
+          "message": "Invalid task item id",
+          'error': True
+          })
+
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
 
 
 class TaskAPI(APIView):

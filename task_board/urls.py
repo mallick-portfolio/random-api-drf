@@ -3,7 +3,8 @@ from task_board import views
 
 urlpatterns = [
     path('', views.BoardAPIView.as_view(), name='BoardAPI'),
-    path('<int:pk>/', views.BoardAPIView.as_view(), name='board-details'),
+    path('<int:pk>/', views.BoardAPIView.as_view(), name='BoardDetailAPI'),
     path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),
+    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),
     path('task/', views.TaskAPI.as_view(), name='TaskAPI')
 ]

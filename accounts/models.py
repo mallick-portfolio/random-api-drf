@@ -2,6 +2,7 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
+from django.utils.timezone import now
 
 from .managers import CustomUserManager
 
@@ -21,7 +22,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
   is_email_verified = models.BooleanField(default=False)
 
   otp = models.CharField(max_length=20, blank=True, null=True)
-  otp_created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+  otp_created_at = models.DateTimeField(default=now, blank=True, null=True)
 
 
   is_staff = models.BooleanField(_("is staff"), default=False)

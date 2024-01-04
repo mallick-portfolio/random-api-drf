@@ -23,9 +23,10 @@ class RegistrationSerializer(serializers.ModelSerializer):
     last_name = self.validated_data['last_name']
     phone = self.validated_data['phone']
     otp = self.validated_data['otp']
+    gender = self.validated_data['gender']
     password = self.validated_data['password']
     password2 = self.validated_data['password2']
-    user = CustomUser(email=email, username=username, first_name=first_name, last_name=last_name, phone=phone, otp=otp)
+    user = CustomUser(email=email, username=username, first_name=first_name, last_name=last_name, phone=phone, otp=otp, gender=gender)
 
     if password != password2:
       raise serializers.ValidationError({'password': 'Passwords must match.'})
