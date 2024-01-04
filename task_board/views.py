@@ -8,6 +8,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from task_board.models import Board, TaskItem, Task
 from django.db import models
 import traceback
+from accounts.helpers import create_default_task_item
 # Create your views here.
 
 
@@ -60,7 +61,8 @@ class BoardAPIView(APIView):
 
       serializer = BoardSerializer(data=data)
       if serializer.is_valid():
-        serializer.save(user=self.request.user, authorize_users=[self.request.user.id])
+        board = serializer.save(user=self.request.user, authorize_users=[self.request.user.id])
+        create_default_task_item(board=board, user=request.user)
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,
@@ -75,7 +77,10 @@ class BoardAPIView(APIView):
           "error": serializer.errors
         })
     except Exception as e:
-      return Response(str(e), status=status.HTTP_200_OK, )
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
 
   def put(self, request, pk):
     board = Board.objects.filter(pk=pk, user=request.user).first()
@@ -170,14 +175,14 @@ class TaskItemAPI(APIView):
         title = data.get('title')
         new_position = data.get('position')
         if title is not None:
-          # if TaskItem.objects.filter(board__id=data['board'], title=data['title']).exists():
-          #   return Response({
-          #   "success": True,
-          #   "message": "Task item name already exist. Try with another name!!!",
-          #   "error": False
-          #   })
-
+          if TaskItem.objects.filter(board__id=data['board'], title=data['title']).exists():
+            return Response({
+            "success": True,
+            "message": "Task item name already exist. Try with another name!!!",
+            "error": False
+            })
           task_item.title = data['title']
+          task_item.save()
         if new_position is not None:
           current_position = task_item.position
 
@@ -201,6 +206,34 @@ class TaskItemAPI(APIView):
           'error': True
           })
 
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
+
+  def delete(self, request, pk):
+    try:
+      task_item = TaskItem.objects.filter(pk=pk).first()
+      board = Board.objects.filter(id=task_item.board.id, authorize_users__contains=[request.user.id])
+      current_position = task_item.position
+
+      if board and task_item:
+        task_item.delete()
+        TaskItem.objects.filter(position__gt=current_position, board=task_item.board).update(position=models.F('position') - 1)
+
+
+        return Response({
+            "success": True,
+            "message": "Task item deleted successfully!!!",
+            'error': False
+            })
+      else:
+        return Response({
+            "success": False,
+            "message": "Invalid task item id",
+            'error': True
+            })
     except Exception as e:
       return Response({
           "error": f'Error is {e}',

@@ -7,6 +7,7 @@ import string
 import random
 from datetime import datetime, timedelta
 from django.utils import timezone
+from task_board.models import TaskItem
 
 
 def compare_minute(otp_send_time):
@@ -41,3 +42,9 @@ def get_tokens_for_user(user):
         'refresh': str(refresh),
         'access': str(refresh.access_token),
     }
+
+def create_default_task_item(board, user):
+    default_item = ['Todo', 'In Progress', "Done"]
+    for index, val in enumerate(default_item):
+        TaskItem.objects.create(title=val, board=board,user=user, position=index+1)
+        print(index, val)
