@@ -27,6 +27,7 @@ class TaskItem(models.Model):
 
 class Task(models.Model):
   title = models.CharField(max_length=150)
+  description = models.TextField(blank=True, null=True)
   banner = models.ImageField(upload_to='taskboard/', max_length=None, null=True, blank=True)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
   task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True)

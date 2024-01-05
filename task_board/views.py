@@ -29,7 +29,7 @@ class BoardAPIView(APIView):
         data['task_item'] = TaskItemSerializer(task_item, many=True).data
 
         for t in data['task_item']:
-          task = Task.objects.filter(task_item__id=t['id'])
+          task = Task.objects.filter(task_item__id=t['id']).order_by('position')
           t['tasks'] = TaskSerializer(task, many=True).data
 
         return Response({
@@ -245,6 +245,30 @@ class TaskAPI(APIView):
   permission_classes = [IsAuthenticated]
   authentication_classes = [JWTAuthentication]
 
+  def get(self, request, pk):
+    try:
+      task = Task.objects.filter(pk=pk).first()
+      if task is not None:
+        data = TaskSerializer(task).data
+        return Response({
+            "success": False,
+            'message': "Task id not found",
+            'error': False,
+            "data": data
+          })
+      else:
+        return Response({
+            "success": False,
+            'message': "Task id not found",
+            'error': True
+          })
+
+    except Exception as e:
+      return Response({
+        "success": False,
+        "error": f'error is {e}'
+        })
+
   def post(self, request):
     try:
       user = request.user
@@ -259,7 +283,11 @@ class TaskAPI(APIView):
             'error': True
           })
 
-
+        max_position = Task.objects.filter(task_item=task_item).aggregate(models.Max('position'))['position__max']
+        if max_position is not None:
+          data['position'] = max_position + 1
+        else:
+          data['position'] = 1
         serializer = TaskSerializer(data=data)
         if serializer.is_valid():
           serializer.save(user=user)
@@ -284,5 +312,48 @@ class TaskAPI(APIView):
       return Response({
         "success": False,
         "error": f'error is {e}'
-          })
+        })
 
+
+  def patch(self, request, pk):
+    try:
+      task = Task.objects.filter(pk=pk).first()
+      data = request.data
+
+      if task is not None:
+        current_task_item = task.task_item
+        current_position = task.position
+        new_position = data.get('new_position')
+        new_task_item = TaskItem.objects.filter(id=data.get('task_item')).first()
+
+        if new_task_item == current_task_item:
+          print(current_position, new_position)
+
+          if current_position < new_position:
+            Task.objects.filter(position__gt=current_position, position__lte=new_position, task_item=current_task_item).update(position=models.F('position') - 1)
+          # elif current_position > new_position:
+          #   Task.objects.filter(position__lt=current_position, position__gte=new_position, task_item=current_task_item).update(position=models.F('position') + 1)
+          #   task.position = current_position
+            task.save()
+        else:
+          Task.objects.filter(position__gt=current_position, position__lte=new_position, task_item=current_task_item).update(position=models.F('position') - 1)
+          Task.objects.filter(position__lt=current_position, position__gte=new_position, task_item=new_task_item).update(position=models.F('position') + 1)
+          task.position = new_position
+          task.task_item = new_task_item
+          task.save()
+        return Response({
+            "success": True,
+            'message': "Task moved successfully!!!",
+            'error': False
+          })
+      else:
+        return Response({
+            "success": False,
+            'message': "Invalid task id. Failed to move task",
+            'error': True
+          })
+    except Exception as e:
+      return Response({
+        "success": False,
+        "error": f'error is {e}'
+        })
