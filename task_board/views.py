@@ -10,7 +10,7 @@ from django.db import models
 import traceback
 from accounts.helpers import create_default_task_item
 # Create your views here.
-
+from django.shortcuts import get_object_or_404
 
 
 class BoardAPIView(APIView):
@@ -317,43 +317,48 @@ class TaskAPI(APIView):
 
   def patch(self, request, pk):
     try:
-      task = Task.objects.filter(pk=pk).first()
+      task = get_object_or_404(Task, pk=pk)
       data = request.data
 
       if task is not None:
         current_task_item = task.task_item
         current_position = task.position
         new_position = data.get('new_position')
-        new_task_item = TaskItem.objects.filter(id=data.get('task_item')).first()
-
+        new_task_item = get_object_or_404(TaskItem, id=data.get('task_item'))
         if new_task_item == current_task_item:
-          print(current_position, new_position)
-
           if current_position < new_position:
-            Task.objects.filter(position__gt=current_position, position__lte=new_position, task_item=current_task_item).update(position=models.F('position') - 1)
-          # elif current_position > new_position:
-          #   Task.objects.filter(position__lt=current_position, position__gte=new_position, task_item=current_task_item).update(position=models.F('position') + 1)
-          #   task.position = current_position
-            task.save()
+            tasks_to_update = Task.objects.filter(position__gt=current_position, position__lte=new_position, task_item=current_task_item)
+            for t in tasks_to_update:
+              t.position -= 1
+              t.save()
+          elif current_position > new_position:
+            tasks_to_update = Task.objects.filter(position__lt=current_position, position__gte=new_position, task_item=current_task_item)
+            for t in tasks_to_update:
+              t.position += 1
+              t.save()
+          task.position = new_position
+          task.save()
         else:
-          Task.objects.filter(position__gt=current_position, position__lte=new_position, task_item=current_task_item).update(position=models.F('position') - 1)
-          Task.objects.filter(position__lt=current_position, position__gte=new_position, task_item=new_task_item).update(position=models.F('position') + 1)
+
+          tasks_to_update = Task.objects.filter(position__gt=current_position, task_item=current_task_item)
+          for t in tasks_to_update:
+            t.position -= 1
+            t.save()
+          tasks_to_update = Task.objects.filter(position__gte=new_position, task_item=new_task_item)
+          for t in tasks_to_update:
+            t.position += 1
+            t.save()
           task.position = new_position
           task.task_item = new_task_item
           task.save()
-        return Response({
-            "success": True,
-            'message': "Task moved successfully!!!",
-            'error': False
-          })
-      else:
-        return Response({
-            "success": False,
-            'message': "Invalid task id. Failed to move task",
-            'error': True
-          })
+
+      return Response({
+        "success": True,
+        "message": 'Task moved successfully!!!',
+        'error': False
+      })
     except Exception as e:
       return Response({
         "success": False,
         "error": f'error is {e}'
-        })
+      })
