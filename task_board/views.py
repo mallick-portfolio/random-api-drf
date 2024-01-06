@@ -251,8 +251,8 @@ class TaskAPI(APIView):
       if task is not None:
         data = TaskSerializer(task).data
         return Response({
-            "success": False,
-            'message': "Task id not found",
+            "success": True,
+            'message': "Task details retrived successfully!!!",
             'error': False,
             "data": data
           })
