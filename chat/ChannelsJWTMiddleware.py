@@ -8,8 +8,12 @@ class JWTAuthMiddleware:
 
     async def __call__(self, scope, receive, send):
 
-        query_string = scope['query_string'].decode()
+        query_string = scope.get('query_string').decode()
+        if not query_string:
+            scope['user'] = None
+            return 
         token = query_string.split('=')[1]
+
         try:
             user = AccessToken(token).payload
             scope['user'] = user['user_id']

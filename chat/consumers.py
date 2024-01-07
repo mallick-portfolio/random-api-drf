@@ -3,8 +3,12 @@ from channels.generic.websocket import WebsocketConsumer, AsyncWebsocketConsumer
 import json
 from channels.db import database_sync_to_async
 from accounts.models import CustomUser
-import jwt
-import os
+from task_board.models import Board
+from chat.models import Message
+from chat.serializers import MessageSerializer
+
+from asgiref.sync import sync_to_async
+
 
 class ChatConsumer(WebsocketConsumer):
   def connect(self):
@@ -20,14 +24,12 @@ class ChatConsumer(WebsocketConsumer):
     }))
 
   def receive(self, text_data=None, bytes_data=None):
-    print(text_data)
     self.send(text_data=json.dumps({
       "data": text_data
     }))
     return super().receive(text_data, bytes_data)
 
   def disconnect(self, code):
-    print(code, "disconnected")
     return super().disconnect(code)
 
 
@@ -45,10 +47,7 @@ class NewConsumer(AsyncWebsocketConsumer):
   async def receive(self, text_data=None):
     message = json.loads(text_data)
     message['type'] = 'text'
-    await self.channel_layer.group_send(
-          self.room_group_name, {"type": "chat_message", "message": message}
-        )
-    # return await super().receive(text_data, bytes_data)
+
 
   async def disconnect(self, code):
     print('socket disconnected')
@@ -76,9 +75,12 @@ class MessageConsumer(AsyncWebsocketConsumer):
 
   async def receive(self, text_data=None, bytes_data=None):
 
-    # user = await self.get_user_data()
-    message = json.loads(text_data)
-    print(message)
+    text_data_json = json.loads(text_data)
+    message = text_data_json['content']
+    await self.channel_layer.group_send(self.room_group_name, {
+        'type': 'chat_message',
+        'message': message,
+    })
 
 
   # disconnect
@@ -86,7 +88,32 @@ class MessageConsumer(AsyncWebsocketConsumer):
     await self.channel_layer.group_discard(self.room_group_name, self.channel_name)
 
 
+  async def chat_message(self, event):
+    content = event['message']
+    board =await self.get_board_data()
+    user =await self.get_user_data()
+    print( user)
+    new_msg = await self.create_chat(content, user, board)
+    print(new_msg)
+    await self.send(text_data=json.dumps({
+        'message': new_msg,
+    }))
+
+
+  # get user details
   @database_sync_to_async
   def get_user_data(self):
     user = CustomUser.objects.filter(id=self.scope['user']).first()
     return user
+
+  # get board details
+  @database_sync_to_async
+  def get_board_data(self):
+    board = Board.objects.filter(unique_id=self.room_name).first()
+    return board
+
+  @database_sync_to_async
+  def create_chat(self, content, user, board):
+    msg = Message.objects.create(board=board,user=user, content=content)
+    data = MessageSerializer(msg).data
+    return data
