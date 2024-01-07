@@ -11,15 +11,17 @@ import traceback
 from accounts.helpers import create_default_task_item
 # Create your views here.
 from django.shortcuts import get_object_or_404
+from django.utils.crypto import get_random_string
+
 
 
 class BoardAPIView(APIView):
   permission_classes = [IsAuthenticated]
   authentication_classes = [JWTAuthentication]
-  def get(self,request, pk=None):
+  def get(self,request, unique_id=None):
     user = request.user
-    if pk is not None:
-      board = Board.objects.filter(pk=pk,authorize_users__contains=[user.id]).first()
+    if unique_id is not None:
+      board = Board.objects.filter(unique_id=unique_id,authorize_users__contains=[user.id]).first()
       if board is not None:
 
         task_item = TaskItem.objects.filter(board=board).order_by('position')
@@ -58,7 +60,7 @@ class BoardAPIView(APIView):
   def post(self, request):
     try:
       data = request.data
-
+      data['unique_id'] = get_random_string(20).lower()
       serializer = BoardSerializer(data=data)
       if serializer.is_valid():
         board = serializer.save(user=self.request.user, authorize_users=[self.request.user.id])
@@ -82,8 +84,8 @@ class BoardAPIView(APIView):
           'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
         })
 
-  def put(self, request, pk):
-    board = Board.objects.filter(pk=pk, user=request.user).first()
+  def put(self, request, unique_id):
+    board = Board.objects.filter(unique_id=unique_id, user=request.user).first()
     if board is not None:
       serializer = BoardUpdateSerializer(board, data=request.data, partial=True)
       if serializer.is_valid():
@@ -101,10 +103,10 @@ class BoardAPIView(APIView):
             'message': "Invalid Credentials",
           })
 
-  def delete(self,request, pk=None):
+  def delete(self,request, unique_id=None):
     user = request.user
-    if pk is not None:
-      board = Board.objects.filter(pk=pk, user=user).first()
+    if unique_id is not None:
+      board = Board.objects.filter(unique_id=unique_id, user=user).first()
       if board is not None:
         board.delete()
         return Response({
@@ -129,7 +131,7 @@ class TaskItemAPI(APIView):
     try:
       user = request.user
       data = request.data
-      board = Board.objects.filter(id=data['board'], authorize_users__contains=[user.id]).first()
+      board = Board.objects.filter(unique_id=data['board'], authorize_users__contains=[user.id]).first()
       if board is not None:
         task_item = TaskItem.objects.filter(title=data['title'], board=board).first()
         if task_item is not None:
@@ -145,6 +147,9 @@ class TaskItemAPI(APIView):
         else:
           data['position'] = 1
 
+        data['board'] = board.id
+        print(data)
+
         serilizer = TaskItemSerializer(data=data)
         if serilizer.is_valid():
           serilizer.save(user=request.user)
@@ -153,6 +158,12 @@ class TaskItemAPI(APIView):
             'message': "New task item created successfully",
             "data": serilizer.data
           }, status=status.HTTP_201_CREATED)
+        else:
+          return Response({
+            "success": False,
+            'message': "Serializer error!!!",
+            'error': True
+          })
       else:
         return Response({
             "success": False,
@@ -162,9 +173,9 @@ class TaskItemAPI(APIView):
 
     except Exception as e:
       return Response({
-        "success": False,
-        "error": f'error is {e}'
-          })
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
 
   def put(self, request, pk):
     try:

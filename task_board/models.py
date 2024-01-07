@@ -4,6 +4,7 @@ from accounts.models import CustomUser
 from django.contrib.postgres.fields import ArrayField
 # Create your models here.
 class Board(models.Model):
+  unique_id = models.CharField(max_length=255, blank=True, null=True, unique=True)
   title = models.CharField(max_length=100)
   description = models.TextField(blank=True, null=True)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, )
