@@ -379,3 +379,15 @@ class TaskAPI(APIView):
         "success": False,
         "error": f'error is {e}'
       })
+
+
+class BoardMember(APIView):
+  def post(self, request):
+    try:
+      pass
+
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })

@@ -11,7 +11,7 @@ class JWTAuthMiddleware:
         query_string = scope.get('query_string').decode()
         if not query_string:
             scope['user'] = None
-            return 
+            return
         token = query_string.split('=')[1]
 
         try:

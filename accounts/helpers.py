@@ -1,5 +1,5 @@
 from rest_framework_simplejwt.tokens import RefreshToken
-
+from rest_framework.response import Response
 
 from django.core.mail import  EmailMultiAlternatives
 from django.template.loader import render_to_string
@@ -8,7 +8,7 @@ import random
 from datetime import datetime, timedelta
 from django.utils import timezone
 from task_board.models import TaskItem
-
+import traceback
 
 def compare_minute(otp_send_time):
     print(otp_send_time)
@@ -22,13 +22,13 @@ def compare_minute(otp_send_time):
 
 
 def send_otp_email(email,data, subject, template):
-    message = render_to_string(template, {
-        'email' : email,
-        "data": data
-    })
-    send_email = EmailMultiAlternatives(subject, '', to=[email])
-    send_email.attach_alternative(message, "text/html")
-    send_email.send()
+    try:
+        pass
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
 
 def generate_otp(length=6):
     characters = string.digits

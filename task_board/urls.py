@@ -9,5 +9,6 @@ urlpatterns = [
     path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),
     path('task/', views.TaskAPI.as_view(), name='TaskAPI'),
     path('<str:unique_id>/', views.BoardAPIView.as_view(), name='BoardDetailAPI'),
+    path('invite-board-member/<str:unique_id>', views.BoardMember.as_view(), name='BoardMember'),
 
 ]
