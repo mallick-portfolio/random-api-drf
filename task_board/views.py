@@ -12,6 +12,8 @@ from accounts.helpers import create_default_task_item
 # Create your views here.
 from django.shortcuts import get_object_or_404
 from django.utils.crypto import get_random_string
+from chat.models import Message
+from chat.serializers import MessageSerializer
 
 
 
@@ -27,13 +29,18 @@ class BoardAPIView(APIView):
         task_item = TaskItem.objects.filter(board=board).order_by('position')
         serializer = BoardSerializer(board, many=False)
         data = {}
+        messages = Message.objects.filter(board=board).order_by('created_at')
+
         data['board'] = serializer.data
+
+
         data['task_item'] = TaskItemSerializer(task_item, many=True).data
 
         for t in data['task_item']:
           task = Task.objects.filter(task_item__id=t['id']).order_by('position')
           t['tasks'] = TaskSerializer(task, many=True).data
 
+        data['messages'] = MessageSerializer(messages, many=True).data
         return Response({
               "success": True,
               'message': "Board details retrived successfully!!!",
@@ -148,7 +155,6 @@ class TaskItemAPI(APIView):
           data['position'] = 1
 
         data['board'] = board.id
-        print(data)
 
         serilizer = TaskItemSerializer(data=data)
         if serilizer.is_valid():

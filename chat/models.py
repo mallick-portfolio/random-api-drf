@@ -5,8 +5,13 @@ from task_board.models import Board
 
 
 class Message(models.Model):
+  MESSAGE_TYPE = (
+     ('text', 'text'),
+     ('media', 'media'),
+  )
   board = models.ForeignKey(Board, on_delete=models.CASCADE)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+  message_type = models.CharField(choices=MESSAGE_TYPE,blank=True, null=True)
   content = models.TextField()
 
   created_at = models.DateTimeField(auto_now_add=True)
