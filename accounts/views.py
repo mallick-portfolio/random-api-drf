@@ -5,13 +5,44 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import authenticate, login, logout
 from . import helpers
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.authentication import JWTAuthentication
 import random
+
+from rest_framework.decorators import (api_view, permission_classes, authentication_classes)
+from rest_framework.permissions import IsAuthenticated
+
 
 from accounts.models import CustomUser
 # Create your views here.
 import traceback
+
+
+# all user in this platform
+@api_view(['GET', 'POST'])
+# @authentication_classes([JWTAuthentication])
+@permission_classes([AllowAny])
+def users(request):
+  try:
+    payload = CustomUser.objects.all().exclude(id=request.user.id)
+    serializer = UserSerializer(payload, many=True)
+    return Response({
+          "success": True,
+          "status": status.HTTP_200_OK,
+          'message': "Users retrived successfully!!!",
+          'data': serializer.data
+        })
+
+
+  except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
+
+
+
+
 
 class RegistrationAPIView(APIView):
   def post(self, request):
@@ -47,6 +78,7 @@ class VerifyEmailOTP(APIView):
     try:
 
       data = request.data
+      print(data)
       user = CustomUser.objects.filter(email=data['email'],otp=data['otp']).first()
       print(user)
       if user is not None:

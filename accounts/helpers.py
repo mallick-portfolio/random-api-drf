@@ -11,9 +11,7 @@ from task_board.models import TaskItem
 import traceback
 
 def compare_minute(otp_send_time):
-    print(otp_send_time)
     current_time = timezone.now()
-    print(current_time)
     time_difference = current_time - otp_send_time
     if time_difference > timedelta(minutes=5):
         return True
@@ -23,7 +21,13 @@ def compare_minute(otp_send_time):
 
 def send_otp_email(email,data, subject, template):
     try:
-        pass
+        message = render_to_string(template, {
+            'email' : email,
+            "data": data
+        })
+        send_email = EmailMultiAlternatives(subject, '', to=[email])
+        send_email.attach_alternative(message, "text/html")
+        send_email.send()
     except Exception as e:
       return Response({
           "error": f'Error is {e}',
