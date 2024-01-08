@@ -186,13 +186,13 @@ class TaskItemAPI(APIView):
   def put(self, request, pk):
     try:
       data = request.data
-      task_item = TaskItem.objects.filter(pk=pk, board__id=data['board']).first()
+      task_item = TaskItem.objects.filter(pk=pk, board__unique_id=data['board']).first()
 
       if task_item is not None:
         title = data.get('title')
         new_position = data.get('position')
         if title is not None:
-          if TaskItem.objects.filter(board__id=data['board'], title=data['title']).exists():
+          if TaskItem.objects.filter(board__unique_id=data['board'], title=data['title']).exists():
             return Response({
             "success": True,
             "message": "Task item name already exist. Try with another name!!!",
