@@ -21,8 +21,8 @@ class NotificationAPIView(APIView):
         payload = Notification.objects.filter(receiver=user).order_by('created_at')
         data = NotificationSerializer(payload, many=True).data
       return Response({
-        "success": False,
-        "status": status.HTTP_400_BAD_REQUEST,
+        "success": True,
+        "status": status.HTTP_200_OK,
         'message': "Invalid Credentials",
         "data": data
       })
