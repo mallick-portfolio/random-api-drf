@@ -67,7 +67,8 @@ INSTALLED_APPS = [
     'accounts',
     'task_board',
     "corsheaders",
-    'chat'
+    'chat',
+    'notification'
 
 ]
 
