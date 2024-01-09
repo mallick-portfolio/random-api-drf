@@ -19,10 +19,9 @@ class NotificationConsumer(AsyncWebsocketConsumer):
     sender = await self.get_user(self.scope['user'])
     receiver = await self.get_user(self.room_name)
     text_data_json = json.loads(text_data)
-    message = text_data_json.get('message')
-    new_notification = await self.create_notification(sender, receiver, message)
+
     await self.channel_layer.group_send(
-            self.room_group_name, {"type": "send_notification", "message": new_notification}
+            self.room_group_name, {"type": "send_notification", "message": text_data_json}
         )
 
   async def send_notification(self, event):
@@ -40,9 +39,4 @@ class NotificationConsumer(AsyncWebsocketConsumer):
     return user
 
 
-  @database_sync_to_async
-  def create_notification(self, sender, receiver, message):
-    notification = Notification.objects.create(sender=sender, receiver=receiver, message=message)
-    data = NotificationSerializer(notification).data
-    return data
 

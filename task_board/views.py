@@ -24,6 +24,7 @@ from channels.layers import get_channel_layer
 from accounts.models import CustomUser
 from accounts import helpers
 from django.conf import settings
+from notification.helper import create_notification
 
 
 class BoardAPIView(APIView):
@@ -409,6 +410,11 @@ class BoardMember(APIView):
           data['url'] = f'{settings.FRONT_END_DOMAIN}/account/invite-board-member/?board={board.title}&user={user.first_name}_{user.last_name}&invitation_id={board_invite.id}&unique_id={board.unique_id}'
           data['board'] = board.title
           data['user'] = f'{user.first_name} {user.last_name}'
+
+          notification_message = f"<div>You are invited to the board {board.title} <a href='{data['url']}'>See</a></div>"
+
+          create_notification(user, invited_user, notification_message)
+
 
 
           helpers.email_template(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
