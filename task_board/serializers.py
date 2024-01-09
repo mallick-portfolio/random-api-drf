@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from task_board.models import Board, TaskItem, Task
+from task_board.models import Board, TaskItem, Task, BoardInvitation
 from accounts.models import CustomUser
 
 class BoardSerializer(serializers.ModelSerializer):
@@ -46,4 +46,10 @@ class TaskItemSerializer(serializers.ModelSerializer):
 class TaskSerializer(serializers.ModelSerializer):
   class Meta:
     model = Task
+    fields = '__all__'
+
+
+class BoardInvitationSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = BoardInvitation
     fields = '__all__'

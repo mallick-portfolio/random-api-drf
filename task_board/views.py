@@ -2,10 +2,15 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import (BoardSerializer, TaskItemSerializer, TaskSerializer, BoardUpdateSerializer)
+from .serializers import (
+  BoardSerializer,
+  TaskItemSerializer,
+    TaskSerializer,
+    BoardUpdateSerializer,
+    BoardInvitationSerializer)
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from task_board.models import Board, TaskItem, Task
+from task_board.models import Board, TaskItem, Task, BoardInvitation
 from django.db import models
 import traceback
 from accounts.helpers import create_default_task_item
@@ -14,7 +19,11 @@ from django.shortcuts import get_object_or_404
 from django.utils.crypto import get_random_string
 from chat.models import Message
 from chat.serializers import MessageSerializer
-
+from asgiref.sync import async_to_sync
+from channels.layers import get_channel_layer
+from accounts.models import CustomUser
+from accounts import helpers
+from django.conf import settings
 
 
 class BoardAPIView(APIView):
@@ -32,6 +41,8 @@ class BoardAPIView(APIView):
         messages = Message.objects.filter(board=board).order_by('created_at')
 
         data['board'] = serializer.data
+        invited_user = BoardInvitation.objects.filter(board=board)
+        data['invited_members'] = BoardInvitationSerializer(invited_user, many=True).data
 
 
         data['task_item'] = TaskItemSerializer(task_item, many=True).data
@@ -382,10 +393,75 @@ class TaskAPI(APIView):
 
 
 class BoardMember(APIView):
-  def post(self, request):
+  def post(self, request, action_type):
+    data = request.data
+    user = request.user
+    invited_user_id = data.get('user_id')
+    unique_id = data.get('unique_id')
     try:
-      pass
 
+      board = Board.objects.filter(unique_id=unique_id, authorize_users__contains=[user.id]).first()
+      if action_type == 'invite-board':
+        if board is not None:
+          invited_user = CustomUser.objects.filter(id=invited_user_id).first()
+          board_invite = BoardInvitation.objects.create(board=board, user=invited_user, status='pending')
+          data = {}
+          data['url'] = f'{settings.FRONT_END_DOMAIN}/account/invite-board-member/?board={board.title}&user={user.first_name}_{user.last_name}&invitation_id={board_invite.id}&unique_id={board.unique_id}'
+          data['board'] = board.title
+          data['user'] = f'{user.first_name} {user.last_name}'
+
+
+          helpers.email_template(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
+
+          return Response({
+              "success": True,
+              'message': "Board member invitation successfully",
+              'error': False
+            })
+
+        else:
+          return Response({
+              "success": False,
+              'message': "Invalid board id",
+              'error': True
+            })
+
+      elif action_type == 'accept-invitation':
+        board_invite = BoardInvitation.objects.filter(id=data['invitation_id'],user=user).first()
+
+        if board_invite is not None and board_invite.board.unique_id == unique_id:
+          board_invite.board.authorize_users.append(user.id)
+          board_invite.board.save()
+          board_invite.delete()
+          return Response({
+                "success": True,
+                'message': "Invitation accept successfully!!!",
+                'error': False
+              })
+        else:
+          return Response({
+                "success": False,
+                'message': "Invalid board id or user!!!",
+                'error': True
+              })
+      elif action_type == 'reject-invitation':
+        print('i am calling', data['invitation_id'])
+        board_invite = BoardInvitation.objects.filter(id=data['invitation_id']).first()
+        print(board_invite)
+        if board_invite is not None:
+          board_invite.delete()
+          return Response({
+              "success": True,
+              "reject": True,
+              'message': "Invitation reject successfully!!!",
+              'error': False
+            })
+        else:
+          return Response({
+                "success": False,
+                'message': "Invalid board id or user!!!",
+                'error': True
+              })
     except Exception as e:
       return Response({
           "error": f'Error is {e}',

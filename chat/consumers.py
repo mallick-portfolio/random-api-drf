@@ -8,6 +8,14 @@ from chat.models import Message
 from chat.serializers import MessageSerializer
 
 from asgiref.sync import sync_to_async
+from logging import getLogger
+from functools import wraps
+from inspect import iscoroutinefunction
+from channels.exceptions import AcceptConnection, DenyConnection, StopConsumer
+
+
+logger = getLogger()
+
 
 
 class MessageConsumer(AsyncWebsocketConsumer):

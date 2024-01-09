@@ -38,4 +38,10 @@ class Task(models.Model):
   updated_at = models.DateTimeField(auto_now=False, blank=True, null=True)
 
 
+class BoardInvitation(models.Model):
+  board = models.ForeignKey(Board, on_delete=models.CASCADE, related_name='boards')
+  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+  status = models.CharField(default='pending')
+  created_at = models.DateTimeField(auto_now_add=True)
+
 
