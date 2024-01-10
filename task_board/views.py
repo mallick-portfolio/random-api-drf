@@ -412,7 +412,6 @@ class BoardMember(APIView):
           data['user'] = f'{user.first_name} {user.last_name}'
 
           notification_message = f"<div>You are invited to the board {board.title} <a href='{data['url']}'>See</a></div>"
-
           create_notification(user, invited_user, notification_message)
 
 
@@ -439,6 +438,9 @@ class BoardMember(APIView):
           board_invite.board.authorize_users.append(user.id)
           board_invite.board.save()
           board_invite.delete()
+
+          notification_message = f"<div>{user.first_name} {user.last_name} accept the {board_invite.board.title} board invitation </div>"
+          create_notification(user, board_invite.board.user, notification_message)
           return Response({
                 "success": True,
                 'message': "Invitation accept successfully!!!",

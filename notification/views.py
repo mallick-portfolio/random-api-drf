@@ -31,3 +31,28 @@ class NotificationAPIView(APIView):
           "error": f'Error is {e}',
           'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
         })
+
+  def delete(self, request, pk):
+    try:
+      user = request.user
+      notification = Notification.objects.filter(pk=pk, receiver=user).first()
+      if notification is not None:
+        notification.delete()
+        return Response({
+          "success": True,
+          "status": status.HTTP_200_OK,
+          'message': "Notification deleted successfully",
+          "error": False
+        })
+      else:
+        return Response({
+          "success": False,
+          "status": status.HTTP_404_NOT_FOUND,
+          'message': "Invalid notification id!!!",
+          "error": True
+        })
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+        })
