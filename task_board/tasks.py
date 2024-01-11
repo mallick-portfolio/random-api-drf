@@ -5,7 +5,7 @@ from django.template.loader import render_to_string
 from django.core.mail import  EmailMultiAlternatives
 from rest_framework.response import Response
 import traceback
-
+  
 
 @shared_task
 def email_template(email,data, subject, template):
