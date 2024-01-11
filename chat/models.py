@@ -13,5 +13,8 @@ class Message(models.Model):
 
   created_at = models.DateTimeField(auto_now_add=True)
 
-  def __str__(self):
-      return f"{self.sender.username} - {self.created_at}"
+
+class MessageAttachments(models.Model):
+  message = models.ForeignKey(Message, on_delete=models.CASCADE, blank=True, null=True, related_name='message_attachments')
+  image = models.ImageField(upload_to="message/media", blank=True, null=True)
+  file = models.FileField(upload_to="message/media", blank=True, null=True)

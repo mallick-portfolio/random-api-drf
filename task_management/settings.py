@@ -68,7 +68,9 @@ INSTALLED_APPS = [
     'task_board',
     "corsheaders",
     'chat',
-    'notification'
+    'notification',
+    "django_celery_results",
+
 
 ]
 
@@ -241,3 +243,16 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 FRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')
+
+
+# celery setting
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_TIMEZONE = 'Asia/Dhaka'
+broker_connection_retry_on_startup = True
+CELERY_IMPORTS = [
+    'task_board.tasks',
+]

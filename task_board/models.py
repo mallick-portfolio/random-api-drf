@@ -18,7 +18,7 @@ class Board(models.Model):
 class TaskItem(models.Model):
   title = models.CharField(max_length=150)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
-  board = models.ForeignKey(Board, on_delete=models.CASCADE, null=True, blank=True)
+  board = models.ForeignKey(Board, on_delete=models.CASCADE, null=True, blank=True, related_name='task_items')
   position = models.PositiveIntegerField(blank=True, null=True)
 
   # time stapm
@@ -31,7 +31,7 @@ class Task(models.Model):
   description = models.TextField(blank=True, null=True)
   banner = models.ImageField(upload_to='taskboard/', max_length=None, null=True, blank=True)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
-  task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True)
+  task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True, related_name='tasks')
   position = models.PositiveIntegerField(blank=True, null=True)
   # time stapm
   created_at = models.DateTimeField(auto_now_add=True,blank=True, null=True)
