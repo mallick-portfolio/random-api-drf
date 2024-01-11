@@ -8,14 +8,11 @@ from . import helpers
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.authentication import JWTAuthentication
 import random
-
 from rest_framework.decorators import (api_view, permission_classes, authentication_classes)
 from rest_framework.permissions import IsAuthenticated
-
-
 from accounts.models import CustomUser
-# Create your views here.
 import traceback
+from task_board.tasks import email_template
 
 
 # all user in this platform
@@ -56,7 +53,7 @@ class RegistrationAPIView(APIView):
       if serializer.is_valid():
         email = request.data['email']
         serializer.save()
-        helpers.email_template(email,data,'Verify OTP Code', './email/verifyEmail.html')
+        email_template.delay(email,data,'Verify OTP Code', './email/verifyEmail.html')
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,

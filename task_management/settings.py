@@ -256,3 +256,7 @@ broker_connection_retry_on_startup = True
 CELERY_IMPORTS = [
     'task_board.tasks',
 ]
+
+
+# celery -A task_management worker -l info -P eventlet
+# celery run command
