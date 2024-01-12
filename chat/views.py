@@ -10,6 +10,7 @@ from task_board.models import Board
 class MessageAttachmentsView(APIView):
     def post(self, request):
         try:
+            print(request.data)
             data = request.data
             media_type = data['media_type']
             images = data.getlist('image')
