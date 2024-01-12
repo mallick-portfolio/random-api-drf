@@ -64,7 +64,7 @@ class BoardAPIView(APIView):
             "success": False,
             'message': "Board not found with the given id!!!",
             'error': False
-          }, status=status.HTTP_404_NOT_FOUND)
+          }, status=status.HTTP_200_OK)
     else:
       board = Board.objects.filter(authorize_users__contains=[user.id])
       serializer = BoardSerializer(board, many=True)

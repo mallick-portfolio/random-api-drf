@@ -8,13 +8,17 @@ class Message(models.Model):
 
   board = models.ForeignKey(Board, on_delete=models.CASCADE)
   sender = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-  message_type = models.CharField(blank=True, null=True, default='text')
-  content = models.TextField()
-
+  content = models.TextField(blank=True, null=True)
+  message_type = models.CharField(max_length=20, blank=True, null=True)
   created_at = models.DateTimeField(auto_now_add=True)
 
 
 class MessageAttachments(models.Model):
-  message = models.ForeignKey(Message, on_delete=models.CASCADE, blank=True, null=True, related_name='message_attachments')
+  MEDIA_TYPE = (
+    ('file', 'file'),
+    ('image', 'image'),
+  )
+  message = models.ForeignKey(Message, on_delete=models.CASCADE, related_name='attachments')
   image = models.ImageField(upload_to="message/media", blank=True, null=True)
-  file = models.FileField(upload_to="message/media", blank=True, null=True)
+  media_file = models.FileField(upload_to="message/media", blank=True, null=True)
+  media_type = models.CharField(max_length=10, choices=MEDIA_TYPE, blank=True, null=True)
