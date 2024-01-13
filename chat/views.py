@@ -7,10 +7,15 @@ from .models import MessageAttachments, Message
 from .serializers import MessageAttachmentsSerializer, MessageSerializer
 import traceback
 from task_board.models import Board
+from asgiref.sync import async_to_sync
+from channels.layers import get_channel_layer
+
+
+
+
 class MessageAttachmentsView(APIView):
     def post(self, request):
         try:
-            print(request.data)
             data = request.data
             media_type = data['media_type']
             images = data.getlist('image')
@@ -23,14 +28,23 @@ class MessageAttachmentsView(APIView):
                 if message is not None:
                     for image in images:
                         serializer = MessageAttachmentsSerializer(data={"message": message.id, 'image': image, "media_type": media_type, })
-                        print(serializer)
                         if serializer.is_valid():
                             serializer.save()
                     for media_file in files:
                         serializer = MessageAttachmentsSerializer(data={"message": message.id, 'media_file': media_file,"media_type": media_type,})
                         if serializer.is_valid():
                             serializer.save()
+
+
                     messageData = MessageSerializer(message).data
+                    channel_layer = get_channel_layer()
+                    async_to_sync(channel_layer.group_send)(
+                        f'board_{board.unique_id}',
+                        {
+                            'type': 'chat_message',
+                            'message': messageData
+                        }
+                    )
                     return Response({
                         "success": True,
                         'message': "Files uploaded!!!",

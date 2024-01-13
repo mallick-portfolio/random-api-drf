@@ -32,12 +32,11 @@ class MessageConsumer(AsyncWebsocketConsumer):
     await self.accept()
 
   async def receive(self, text_data=None, bytes_data=None):
-    print(json.loads(text_data))
     user =await self.get_user_data()
     board =await self.get_board_data()
     text_data_json = json.loads(text_data)
     content = text_data_json.get('content')
-    message_type = text_data_json['message_type']
+    message_type = 'text'
 
     new_msg =await self.create_chat(content,message_type, user, board)
 

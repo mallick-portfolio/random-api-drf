@@ -19,6 +19,6 @@ class MessageAttachments(models.Model):
     ('image', 'image'),
   )
   message = models.ForeignKey(Message, on_delete=models.CASCADE, related_name='attachments')
-  image = models.ImageField(upload_to="message/media", blank=True, null=True)
-  media_file = models.FileField(upload_to="message/media", blank=True, null=True)
+  image = models.ImageField(upload_to="message/", blank=True, null=True)
+  media_file = models.FileField(upload_to="message/", blank=True, null=True)
   media_type = models.CharField(max_length=10, choices=MEDIA_TYPE, blank=True, null=True)
