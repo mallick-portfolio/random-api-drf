@@ -506,7 +506,8 @@ class BoardMember(APIView):
 
 
 class TaskLabelViewSet(viewsets.ModelViewSet):
-  permission_classes = [IsAuthenticated]
-  authentication_classes = [JWTAuthentication]
+
   queryset = TaskLabel.objects.all()
   serializer_class = TaskLabelSerializer
+  permission_classes = [IsAuthenticated]
+  authentication_classes = [JWTAuthentication]

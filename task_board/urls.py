@@ -8,6 +8,7 @@ router.register('', views.TaskLabelViewSet)
 
 
 urlpatterns = [
+    path('task-label/',  include(router.urls)),
     path('', views.BoardAPIView.as_view(), name='BoardAPI'),
     path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),
     path('task/<int:pk>/', views.TaskAPI.as_view(), name='TaskDetailAPI'),
@@ -15,5 +16,4 @@ urlpatterns = [
     path('task/', views.TaskAPI.as_view(), name='TaskAPI'),
     path('<str:unique_id>/', views.BoardAPIView.as_view(), name='BoardDetailAPI'),
     path('invite-board-member/<str:action_type>/', views.BoardMember.as_view(), name='BoardMember'),
-    path('task-label/',  include(router.urls))
 ]
