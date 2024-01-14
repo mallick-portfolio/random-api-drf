@@ -7,10 +7,12 @@ from .serializers import (
   TaskItemSerializer,
     TaskSerializer,
     BoardUpdateSerializer,
-    BoardInvitationSerializer)
+    BoardInvitationSerializer,
+    TaskLabelSerializer
+    )
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from task_board.models import Board, TaskItem, Task, BoardInvitation
+from task_board.models import Board, TaskItem, Task, BoardInvitation, TaskLabel
 from django.db import models
 import traceback
 from accounts.helpers import create_default_task_item
@@ -26,6 +28,7 @@ from accounts import helpers
 from django.conf import settings
 from notification.helper import create_notification
 from task_board.tasks import email_template
+from rest_framework import viewsets
 
 
 class BoardAPIView(APIView):
@@ -394,6 +397,30 @@ class TaskAPI(APIView):
       })
 
 
+
+  def delete(self, request, pk):
+    try:
+      task = get_object_or_404(Task, pk=pk)
+      if task is not None:
+        task.delete()
+        return Response({
+          "success": True,
+          "message": 'Task delete successfully!!!',
+          'error': False
+        })
+      else:
+        return Response({
+          "success": False,
+          "message": 'Task delete failed!!!',
+          'error': True
+        })
+    except Exception as e:
+      return Response({
+        "success": False,
+        "error": f'error is {e}'
+      })
+
+
 class BoardMember(APIView):
   def post(self, request, action_type):
     data = request.data
@@ -476,3 +503,10 @@ class BoardMember(APIView):
           "error": f'Error is {e}',
           'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
         })
+
+
+class TaskLabelViewSet(viewsets.ModelViewSet):
+  permission_classes = [IsAuthenticated]
+  authentication_classes = [JWTAuthentication]
+  queryset = TaskLabel.objects.all()
+  serializer_class = TaskLabelSerializer
