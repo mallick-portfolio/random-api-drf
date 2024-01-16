@@ -256,7 +256,8 @@ broker_connection_retry_on_startup = True
 CELERY_IMPORTS = [
     'task_board.tasks',
 ]
-
+STRIPE_SECRET_KEY=os.environ.get("STRIPE_SECRET_KEY")
+STRIPE_PUBLISHABLE_KEY=os.environ.get("STRIPE_PUBLISHABLE_KEY")
 
 # celery -A task_management worker -l info -P eventlet
 # celery run command

@@ -50,3 +50,20 @@ class TaskLabel(models.Model):
   is_completed = models.BooleanField(default=False)
 
 
+class TaskComment(models.Model):
+  task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='task_comments', blank=True, null=True)
+  content = models.TextField()
+  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='comments')
+  comment_type = models.CharField(max_length=20, blank=True, null=True)
+  created_at = models.DateTimeField(auto_now_add=True)
+
+class TaskAttachments(models.Model):
+  MEDIA_TYPE = (
+    ('file', 'file'),
+    ('image', 'image'),
+  )
+  comment = models.ForeignKey(TaskComment, on_delete=models.CASCADE, related_name='task_attachments')
+  image = models.ImageField(upload_to="comment/", blank=True, null=True)
+  media_file = models.FileField(upload_to="comment/", blank=True, null=True)
+  media_type = models.CharField(max_length=10, choices=MEDIA_TYPE, blank=True, null=True)
+

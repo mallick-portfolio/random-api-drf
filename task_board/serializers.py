@@ -1,6 +1,9 @@
 from rest_framework import serializers
-from task_board.models import Board, TaskItem, Task, BoardInvitation, TaskLabel
+from task_board.models import Board, TaskItem, Task, BoardInvitation, TaskLabel, TaskComment, TaskAttachments
 from accounts.models import CustomUser
+from accounts.serializers import UserSerializer
+
+
 
 class BoardSerializer(serializers.ModelSerializer):
 
@@ -38,6 +41,31 @@ class BoardUpdateSerializer(serializers.ModelSerializer):
     instance.save()
     return instance
 
+
+
+class TaskAttachmentsSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = TaskAttachments
+    fields = "__all__"
+
+
+class TaskCommentSerializer(serializers.ModelSerializer):
+  task_attachments = TaskAttachmentsSerializer(many=True, read_only=True)
+  user = serializers.SerializerMethodField('get_user')
+  class Meta:
+    model = TaskComment
+    fields = "__all__"
+    read_only_fields = ['user',]
+
+  @staticmethod
+  def get_user(obj):
+    user = CustomUser.objects.get(id=obj.user.id)
+    data = UserSerializer(user).data
+    return data
+
+
+
+
 class TaskItemSerializer(serializers.ModelSerializer):
   class Meta:
     model = TaskItem
@@ -51,6 +79,7 @@ class TaskLabelSerializer(serializers.ModelSerializer):
 
 class TaskSerializer(serializers.ModelSerializer):
   taskLabels = TaskLabelSerializer(many=True, read_only=True)
+  task_comments = TaskCommentSerializer(many=True, read_only=True)
   class Meta:
     model = Task
     fields = '__all__'

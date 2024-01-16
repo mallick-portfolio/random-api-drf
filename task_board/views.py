@@ -8,11 +8,15 @@ from .serializers import (
     TaskSerializer,
     BoardUpdateSerializer,
     BoardInvitationSerializer,
-    TaskLabelSerializer
+    TaskLabelSerializer,
+    TaskCommentSerializer,
+    TaskAttachmentsSerializer
     )
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from task_board.models import Board, TaskItem, Task, BoardInvitation, TaskLabel
+from task_board.models import (Board, TaskItem, Task, BoardInvitation,
+                                TaskLabel,
+                               TaskComment, TaskAttachments)
 from django.db import models
 import traceback
 from accounts.helpers import create_default_task_item
@@ -481,9 +485,7 @@ class BoardMember(APIView):
                 'error': True
               })
       elif action_type == 'reject-invitation':
-        print('i am calling', data['invitation_id'])
         board_invite = BoardInvitation.objects.filter(id=data['invitation_id']).first()
-        print(board_invite)
         if board_invite is not None:
           board_invite.delete()
           return Response({
@@ -511,3 +513,93 @@ class TaskLabelViewSet(viewsets.ModelViewSet):
   serializer_class = TaskLabelSerializer
   permission_classes = [IsAuthenticated]
   authentication_classes = [JWTAuthentication]
+
+
+class TaskCommentAPI(APIView):
+  permission_classes = [IsAuthenticated]
+  authentication_classes = [JWTAuthentication]
+  def post(self, request):
+    try:
+      user = request.user
+      data = request.data
+      data['comment_type'] = 'text'
+      task = Task.objects.filter(id=data['task']).first()
+      if task is not None:
+        # data['task'] = task.id
+        serializer = TaskCommentSerializer(data=data)
+        if serializer.is_valid():
+          serializer.save(user=self.request.user)
+          return Response({
+            "success": True,
+            'message': "Comment added!!!",
+            'error': False
+          })
+
+        else:
+          return Response({
+          "success": False,
+          'message': "Invalid data",
+          'error': True,
+        })
+
+      else:
+        return Response({
+          "success": False,
+          'message': "Invalid task id!!!. Failed to create new task",
+          'error': True
+        })
+    except Exception as e:
+      return Response({
+        "success": False,
+        "error": f'error is {e}'
+        })
+
+
+
+
+class CommentAttachmentsView(APIView):
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+    def post(self, request):
+        try:
+            data = request.data
+            images = data.getlist('image')
+            files = data.getlist('file')
+            task_id = data.get('task')
+
+            task = Task.objects.get(id=task_id)
+            print(task)
+            if task is not None:
+                comment = TaskComment.objects.create(task=task, user=request.user, comment_type="media")
+
+                if comment is not None:
+                    for image in images:
+                        serializer = TaskAttachmentsSerializer(data={"comment": comment.id, 'image': image, "media_type": 'image', })
+                        if serializer.is_valid():
+                            serializer.save()
+                    for media_file in files:
+
+                        print(files)
+                        serializer = TaskAttachmentsSerializer(data={"comment": comment.id, 'media_file': media_file,"media_type": 'file',})
+                        if serializer.is_valid():
+                            serializer.save()
+                        else:
+                          print(serializer.errors)
+
+                    return Response({
+                        "success": True,
+                        'message': "Files uploaded!!!",
+                        'error': False,
+                        })
+            else:
+                return Response({
+                    "success": False,
+                    'message': "Invalid task id",
+                    'error': True
+                    })
+        except Exception as e:
+            return Response({
+                "error": f'Error is {e}',
+                'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+                })
+
