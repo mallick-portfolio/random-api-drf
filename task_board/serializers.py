@@ -66,6 +66,8 @@ class TaskCommentSerializer(serializers.ModelSerializer):
 
 
 
+
+
 class TaskItemSerializer(serializers.ModelSerializer):
   class Meta:
     model = TaskItem
@@ -80,9 +82,21 @@ class TaskLabelSerializer(serializers.ModelSerializer):
 class TaskSerializer(serializers.ModelSerializer):
   taskLabels = TaskLabelSerializer(many=True, read_only=True)
   task_comments = TaskCommentSerializer(many=True, read_only=True)
+  authorize_users = serializers.SerializerMethodField('get_authorize_users')
   class Meta:
     model = Task
     fields = '__all__'
+    read_only_fields = ['authorize_users']
+
+
+  @staticmethod
+  def get_authorize_users(obj):
+    members = []
+    for id in obj.authorize_users:
+      data = CustomUser.objects.filter(id=id).values('id', 'first_name', 'last_name', 'email').first()
+      members.append(data)
+    print("member", members)
+    return members
 
 
 

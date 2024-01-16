@@ -325,9 +325,12 @@ class TaskAPI(APIView):
           data['position'] = max_position + 1
         else:
           data['position'] = 1
+        # authorize_users = []
+        # authorize_users.append(user.id)
+        # data['authorize_users'] = authorize_users
         serializer = TaskSerializer(data=data)
         if serializer.is_valid():
-          serializer.save(user=user)
+          serializer.save(user=user, authorize_users=[self.request.user.id])
           return Response({
             "success": True,
             'message': "Task created successfully!!!!",
@@ -555,7 +558,42 @@ class TaskCommentAPI(APIView):
         })
 
 
+# assign member for particular task
+class AssignTaskMember(APIView):
+  permission_classes = [IsAuthenticated]
+  authentication_classes = [JWTAuthentication]
+  def post(self, request, task_id):
+    try:
+      task = Task.objects.filter(id=task_id).first()
+      data = request.data
 
+      if task is not None:
+        user = CustomUser.objects.filter(id=data['user']).first()
+        if user is not None:
+          task.authorize_users.append(data['user'])
+          task.save()
+          return Response({
+              "success": True,
+              'message': "Assign member added!!!",
+              'error': False
+            })
+        else:
+          return Response({
+              "success": False,
+              'message': "Invalid member!!!",
+              'error': True
+            })
+      else:
+        return Response({
+            "success": False,
+            'message': "Failed to assign member!!!",
+            'error': True
+          })
+    except Exception as e:
+      return Response({
+          "error": f'Error is {e}',
+          'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+          })
 
 class CommentAttachmentsView(APIView):
     permission_classes = [IsAuthenticated]

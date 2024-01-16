@@ -33,6 +33,9 @@ class Task(models.Model):
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
   task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True, related_name='tasks')
   position = models.PositiveIntegerField(blank=True, null=True)
+  status = models.BooleanField(default=False)
+  authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)
+
   # time stapm
   created_at = models.DateTimeField(auto_now_add=True,blank=True, null=True)
   updated_at = models.DateTimeField(auto_now=False, blank=True, null=True)

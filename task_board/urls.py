@@ -14,6 +14,7 @@ urlpatterns = [
     path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),
     path('task/', views.TaskAPI.as_view(), name='TaskAPI'),
     path("task/task-comment/attachment/", views.CommentAttachmentsView.as_view(), name="commentattachment"),
+    path("task/assign-member/<int:task_id>/", views.AssignTaskMember.as_view(), name="assignmember"),
     path("task/task-comment/", views.TaskCommentAPI.as_view(), name="taskcomment"),
     path('task/<int:pk>/', views.TaskAPI.as_view(), name='TaskDetailAPI'),
     path('<str:unique_id>/', views.BoardAPIView.as_view(), name='BoardDetailAPI'),
