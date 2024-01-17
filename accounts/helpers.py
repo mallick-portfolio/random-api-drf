@@ -41,6 +41,7 @@ def generate_otp(length=6):
 
 def get_tokens_for_user(user):
     refresh = RefreshToken.for_user(user)
+    print("refresh", refresh)
 
     return {
         'refresh': str(refresh),

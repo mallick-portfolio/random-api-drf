@@ -44,7 +44,7 @@ class Task(models.Model):
 class BoardInvitation(models.Model):
   board = models.ForeignKey(Board, on_delete=models.CASCADE, related_name='boards')
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-  status = models.CharField(default='pending')
+  status = models.CharField(default='pending', max_length=20)
   created_at = models.DateTimeField(auto_now_add=True)
 
 class TaskLabel(models.Model):

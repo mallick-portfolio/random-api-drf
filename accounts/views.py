@@ -13,6 +13,7 @@ from rest_framework.permissions import IsAuthenticated
 from accounts.models import CustomUser
 import traceback
 from task_board.tasks import email_template
+from rest_framework_simplejwt.tokens import RefreshToken
 
 
 # all user in this platform
@@ -124,7 +125,11 @@ class LoginAPIView(APIView):
       user = authenticate(request, email=email, password=password)
       if user is not None:
         login(request, user=user)
+
         token = helpers.get_tokens_for_user(user)
+        print(token)
+
+        # print(token)
         return Response({
           "success": True,
           'message': "Login successfull!!!",
