@@ -159,6 +159,7 @@ class TaskItemAPI(APIView):
       user = request.user
       data = request.data
       board = Board.objects.filter(unique_id=data['board'], authorize_users__contains=[user.id]).first()
+      print("board", board)
       if board is not None:
         task_item = TaskItem.objects.filter(title=data['title'], board=board).first()
         if task_item is not None:
@@ -311,8 +312,10 @@ class TaskAPI(APIView):
       user = request.user
       data = request.data
       task_item = TaskItem.objects.filter(id=data['task_item']).first()
+      print("task_item", task_item)
       if task_item is not None:
         task = Task.objects.filter(title=data['title'], task_item=task_item).first()
+        print("task", task)
         if task is not None:
           return Response({
             "success": False,
@@ -606,7 +609,6 @@ class CommentAttachmentsView(APIView):
             task_id = data.get('task')
 
             task = Task.objects.get(id=task_id)
-            print(task)
             if task is not None:
                 comment = TaskComment.objects.create(task=task, user=request.user, comment_type="media")
 
@@ -617,7 +619,6 @@ class CommentAttachmentsView(APIView):
                             serializer.save()
                     for media_file in files:
 
-                        print(files)
                         serializer = TaskAttachmentsSerializer(data={"comment": comment.id, 'media_file': media_file,"media_type": 'file',})
                         if serializer.is_valid():
                             serializer.save()

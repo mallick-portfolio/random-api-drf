@@ -76,9 +76,7 @@ class VerifyEmailOTP(APIView):
     try:
 
       data = request.data
-      print(data)
       user = CustomUser.objects.filter(email=data['email'],otp=data['otp']).first()
-      print(user)
       if user is not None:
         otp_expire = helpers.compare_minute(user.otp_created_at)
         if not otp_expire:
@@ -112,7 +110,6 @@ class VerifyEmailOTP(APIView):
 
 class LoginAPIView(APIView):
   def post(self, request):
-    print(request.data)
     try:
       rd = request.data
       if 'email' not in rd or 'password' not in rd:
@@ -127,9 +124,7 @@ class LoginAPIView(APIView):
         login(request, user=user)
 
         token = helpers.get_tokens_for_user(user)
-        print(token)
 
-        # print(token)
         return Response({
           "success": True,
           'message': "Login successfull!!!",

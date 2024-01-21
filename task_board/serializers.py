@@ -95,7 +95,6 @@ class TaskSerializer(serializers.ModelSerializer):
     for id in obj.authorize_users:
       data = CustomUser.objects.filter(id=id).values('id', 'first_name', 'last_name', 'email').first()
       members.append(data)
-    print("member", members)
     return members
 
 

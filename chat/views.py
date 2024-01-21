@@ -17,7 +17,6 @@ class MessageAttachmentsView(APIView):
     def post(self, request):
         try:
             data = request.data
-            print(data)
             media_type = data['media_type']
             images = data.getlist('image')
             files = data.getlist('file')
@@ -25,7 +24,6 @@ class MessageAttachmentsView(APIView):
             board = Board.objects.get(id=board_id)
             if board is not None:
                 message = Message.objects.create(board=board, sender=request.user, message_type="media")
-                print(message, files)
 
                 if message is not None:
                     for image in images:
@@ -33,7 +31,6 @@ class MessageAttachmentsView(APIView):
                         if serializer.is_valid():
                             serializer.save()
                     for media_file in files:
-                        print(files)
                         serializer = MessageAttachmentsSerializer(data={"message": message.id, 'media_file': media_file,"media_type": media_type,})
                         if serializer.is_valid():
                             serializer.save()

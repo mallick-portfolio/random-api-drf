@@ -41,7 +41,6 @@ def generate_otp(length=6):
 
 def get_tokens_for_user(user):
     refresh = RefreshToken.for_user(user)
-    print("refresh", refresh)
 
     return {
         'refresh': str(refresh),
@@ -52,4 +51,3 @@ def create_default_task_item(board, user):
     default_item = ['Todo', 'In Progress', "Done"]
     for index, val in enumerate(default_item):
         TaskItem.objects.create(title=val, board=board,user=user, position=index+1)
-        print(index, val)
