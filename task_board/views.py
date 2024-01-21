@@ -363,7 +363,7 @@ class TaskAPI(APIView):
       task = get_object_or_404(Task, pk=pk)
       data = request.data
 
-      if task is not None:
+      if task is not None and str(request.user.id) in task.authorize_users:
         current_task_item = task.task_item
         current_position = task.position
         new_position = data.get('new_position')
