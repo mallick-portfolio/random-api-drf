@@ -6,10 +6,10 @@ from accounts.models import CustomUser
 class UserAdmin(BaseUserAdmin):
   model = CustomUser
 
-  list_display = ('email', 'username', 'first_name', 'last_name', 'is_active', 'is_superuser')
+  list_display = ('email', 'first_name', 'last_name', 'is_active', 'is_superuser')
   list_filter = ('is_active', 'is_staff', 'is_superuser')
   fieldsets = (
-      (None, {'fields': ('username', 'email', 'password', 'first_name', 'last_name', 'phone', 'gender', 'otp',)}),
+      (None, {'fields': ('email', 'password', 'first_name', 'last_name', 'phone', 'gender', 'otp',)}),
       ('Permissions', {'fields': ('is_staff', 'is_active','is_email_verified',
         'is_superuser', 'groups', 'user_permissions', )}),
       ('Dates', {'fields': ('otp_created_at', 'last_login', 'date_joined')})
@@ -18,7 +18,7 @@ class UserAdmin(BaseUserAdmin):
   add_fieldsets = (
       (None, {
           'classes': ('wide',),
-          'fields': ('username', 'email','first_name', 'last_name', 'phone', 'gender', 'otp', 'password1', 'password2', 'is_staff', 'is_active')}
+          'fields': ('email','first_name', 'last_name', 'phone', 'gender', 'otp', 'password1', 'password2', 'is_staff', 'is_active')}
         ),
   )
   search_fields = ('email',)

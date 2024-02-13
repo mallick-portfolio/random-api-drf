@@ -19,7 +19,10 @@ def compare_minute(otp_send_time):
         return False
 
 
+
+
 def email_template(email,data, subject, template):
+    print("email", email, data, subject, template)
     try:
         message = render_to_string(template, {
             'email' : email,

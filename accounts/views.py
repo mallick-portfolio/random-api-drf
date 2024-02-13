@@ -12,7 +12,8 @@ from rest_framework.decorators import (api_view, permission_classes, authenticat
 from rest_framework.permissions import IsAuthenticated
 from accounts.models import CustomUser
 import traceback
-from task_board.tasks import email_template
+# from task_board.tasks import email_template
+from accounts.helpers import email_template
 from rest_framework_simplejwt.tokens import RefreshToken
 
 
@@ -50,11 +51,13 @@ class RegistrationAPIView(APIView):
       data = request.data
       otp = helpers.generate_otp(6)
       data['otp'] = int(otp)
+
       serializer = RegistrationSerializer(data=data)
+
       if serializer.is_valid():
         email = request.data['email']
         serializer.save()
-        email_template.delay(email,data,'Verify OTP Code', './email/verifyEmail.html')
+        # email_template(email, data, 'Verify OTP Code', './email/verifyEmail.html')
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,
@@ -65,7 +68,8 @@ class RegistrationAPIView(APIView):
           "success": False,
           "status": status.HTTP_400_BAD_REQUEST,
           'message': "Registration failed.Username or email already exist",
-          'error': True
+          'error': True,
+          "msg": serializer.errors
         })
     except Exception as e:
       return Response({'message':'fail','error':e,"status": status.HTTP_500_INTERNAL_SERVER_ERROR})

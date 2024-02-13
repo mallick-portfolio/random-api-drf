@@ -209,6 +209,7 @@ class TaskItemAPI(APIView):
       data = request.data
       task_item = TaskItem.objects.filter(pk=pk, board__unique_id=data['board']).first()
 
+
       if task_item is not None:
         title = data.get('title')
         new_position = data.get('position')
@@ -221,7 +222,7 @@ class TaskItemAPI(APIView):
             })
           task_item.title = data['title']
           task_item.save()
-        if new_position is not None:
+        if new_position is not None and task_item.board.user.id == request.user.id:
           current_position = task_item.position
 
           if current_position < new_position:
@@ -454,7 +455,7 @@ class BoardMember(APIView):
 
 
 
-          email_template.delay(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
+          # email_template.delay(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
 
           return Response({
               "success": True,

@@ -1,0 +1,3927 @@
+[
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "AccessToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItem",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItem",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "BoardInvitation",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabel",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskComment",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAttachments",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItem",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "BoardInvitation",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabel",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskComment",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAttachments",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItem",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "BoardInvitation",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabel",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskComment",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAttachments",
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "isExtraImport": true,
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "now",
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "isExtraImport": true,
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "accounts",
+        "description": "accounts",
+        "isExtraImport": true,
+        "detail": "accounts",
+        "documentation": {}
+    },
+    {
+        "label": "helpers",
+        "importPath": "accounts",
+        "description": "accounts",
+        "isExtraImport": true,
+        "detail": "accounts",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "rest_framework_simplejwt",
+        "description": "rest_framework_simplejwt",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "authentication_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "email_template",
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "isExtraImport": true,
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "create_default_task_item",
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "isExtraImport": true,
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "MessageAttachments",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "MessageAttachments",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "isExtraImport": true,
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "async_to_sync",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "sync_to_async",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "async_to_sync",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "async_to_sync",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "async_to_sync",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "WebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncWebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncWebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "database_sync_to_async",
+        "importPath": "channels.db",
+        "description": "channels.db",
+        "isExtraImport": true,
+        "detail": "channels.db",
+        "documentation": {}
+    },
+    {
+        "label": "database_sync_to_async",
+        "importPath": "channels.db",
+        "description": "channels.db",
+        "isExtraImport": true,
+        "detail": "channels.db",
+        "documentation": {}
+    },
+    {
+        "label": "MessageSerializer",
+        "importPath": "chat.serializers",
+        "description": "chat.serializers",
+        "isExtraImport": true,
+        "detail": "chat.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MessageSerializer",
+        "importPath": "chat.serializers",
+        "description": "chat.serializers",
+        "isExtraImport": true,
+        "detail": "chat.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "getLogger",
+        "importPath": "logging",
+        "description": "logging",
+        "isExtraImport": true,
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "iscoroutinefunction",
+        "importPath": "inspect",
+        "description": "inspect",
+        "isExtraImport": true,
+        "detail": "inspect",
+        "documentation": {}
+    },
+    {
+        "label": "AcceptConnection",
+        "importPath": "channels.exceptions",
+        "description": "channels.exceptions",
+        "isExtraImport": true,
+        "detail": "channels.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DenyConnection",
+        "importPath": "channels.exceptions",
+        "description": "channels.exceptions",
+        "isExtraImport": true,
+        "detail": "channels.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "StopConsumer",
+        "importPath": "channels.exceptions",
+        "description": "channels.exceptions",
+        "isExtraImport": true,
+        "detail": "channels.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationConsumer",
+        "importPath": "notification.consumers",
+        "description": "notification.consumers",
+        "isExtraImport": true,
+        "detail": "notification.consumers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "isExtraImport": true,
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "isExtraImport": true,
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "isExtraImport": true,
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MultiPartParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "FileUploadParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "get_channel_layer",
+        "importPath": "channels.layers",
+        "description": "channels.layers",
+        "isExtraImport": true,
+        "detail": "channels.layers",
+        "documentation": {}
+    },
+    {
+        "label": "get_channel_layer",
+        "importPath": "channels.layers",
+        "description": "channels.layers",
+        "isExtraImport": true,
+        "detail": "channels.layers",
+        "documentation": {}
+    },
+    {
+        "label": "get_channel_layer",
+        "importPath": "channels.layers",
+        "description": "channels.layers",
+        "isExtraImport": true,
+        "detail": "channels.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "notification.models ",
+        "description": "notification.models ",
+        "isExtraImport": true,
+        "detail": "notification.models ",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "notification.models",
+        "description": "notification.models",
+        "isExtraImport": true,
+        "detail": "notification.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "notification.models",
+        "description": "notification.models",
+        "isExtraImport": true,
+        "detail": "notification.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "notification.models",
+        "description": "notification.models",
+        "isExtraImport": true,
+        "detail": "notification.models",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "notification.models",
+        "description": "notification.models",
+        "isExtraImport": true,
+        "detail": "notification.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSerializer",
+        "importPath": "notification.serializers",
+        "description": "notification.serializers",
+        "isExtraImport": true,
+        "detail": "notification.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSerializer",
+        "importPath": "notification.serializers",
+        "description": "notification.serializers",
+        "isExtraImport": true,
+        "detail": "notification.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSerializer",
+        "importPath": "notification.serializers",
+        "description": "notification.serializers",
+        "isExtraImport": true,
+        "detail": "notification.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "notification",
+        "description": "notification",
+        "isExtraImport": true,
+        "detail": "notification",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.postgres.fields",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.postgres.fields",
+        "description": "django.contrib.postgres.fields",
+        "detail": "django.contrib.postgres.fields",
+        "documentation": {}
+    },
+    {
+        "label": "ArrayField",
+        "importPath": "django.contrib.postgres.fields",
+        "description": "django.contrib.postgres.fields",
+        "isExtraImport": true,
+        "detail": "django.contrib.postgres.fields",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "shared_task",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "Celery",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "task_board",
+        "description": "task_board",
+        "isExtraImport": true,
+        "detail": "task_board",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_string",
+        "importPath": "django.utils.crypto",
+        "description": "django.utils.crypto",
+        "isExtraImport": true,
+        "detail": "django.utils.crypto",
+        "documentation": {}
+    },
+    {
+        "label": "create_notification",
+        "importPath": "notification.helper",
+        "description": "notification.helper",
+        "isExtraImport": true,
+        "detail": "notification.helper",
+        "documentation": {}
+    },
+    {
+        "label": "email_template",
+        "importPath": "task_board.tasks",
+        "description": "task_board.tasks",
+        "isExtraImport": true,
+        "detail": "task_board.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "ProtocolTypeRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "URLRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "AllowedHostsOriginValidator",
+        "importPath": "channels.security.websocket",
+        "description": "channels.security.websocket",
+        "isExtraImport": true,
+        "detail": "channels.security.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "AuthMiddlewareStack",
+        "importPath": "channels.auth",
+        "description": "channels.auth",
+        "isExtraImport": true,
+        "detail": "channels.auth",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthMiddleware",
+        "importPath": "chat.ChannelsJWTMiddleware",
+        "description": "chat.ChannelsJWTMiddleware",
+        "isExtraImport": true,
+        "detail": "chat.ChannelsJWTMiddleware",
+        "documentation": {}
+    },
+    {
+        "label": "ws_patterns",
+        "importPath": "chat.routing",
+        "description": "chat.routing",
+        "isExtraImport": true,
+        "detail": "chat.routing",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_import",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "unicode_literals",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "staticfiles_urlpatterns",
+        "importPath": "django.contrib.staticfiles.urls",
+        "description": "django.contrib.staticfiles.urls",
+        "isExtraImport": true,
+        "detail": "django.contrib.staticfiles.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "kind": 6,
+        "importPath": "accounts.admin",
+        "description": "accounts.admin",
+        "peekOfCode": "class UserAdmin(BaseUserAdmin):\n  model = CustomUser\n  list_display = ('email', 'first_name', 'last_name', 'is_active', 'is_superuser')\n  list_filter = ('is_active', 'is_staff', 'is_superuser')\n  fieldsets = (\n      (None, {'fields': ('email', 'password', 'first_name', 'last_name', 'phone', 'gender', 'otp',)}),\n      ('Permissions', {'fields': ('is_staff', 'is_active','is_email_verified',\n        'is_superuser', 'groups', 'user_permissions', )}),\n      ('Dates', {'fields': ('otp_created_at', 'last_login', 'date_joined')})\n  )",
+        "detail": "accounts.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AccountsConfig",
+        "kind": 6,
+        "importPath": "accounts.apps",
+        "description": "accounts.apps",
+        "peekOfCode": "class AccountsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'accounts'",
+        "detail": "accounts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "compare_minute",
+        "kind": 2,
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "peekOfCode": "def compare_minute(otp_send_time):\n    current_time = timezone.now()\n    time_difference = current_time - otp_send_time\n    if time_difference > timedelta(minutes=5):\n        return True\n    else:\n        return False\ndef email_template(email,data, subject, template):\n    print(\"email\", email, data, subject, template)\n    try:",
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "email_template",
+        "kind": 2,
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "peekOfCode": "def email_template(email,data, subject, template):\n    print(\"email\", email, data, subject, template)\n    try:\n        message = render_to_string(template, {\n            'email' : email,\n            \"data\": data\n        })\n        send_email = EmailMultiAlternatives(subject, '', to=[email])\n        send_email.attach_alternative(message, \"text/html\")\n        send_email.send()",
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_otp",
+        "kind": 2,
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "peekOfCode": "def generate_otp(length=6):\n    characters = string.digits\n    otp = ''.join(random.choice(characters) for _ in range(length))\n    return otp\ndef get_tokens_for_user(user):\n    refresh = RefreshToken.for_user(user)\n    return {\n        'refresh': str(refresh),\n        'access': str(refresh.access_token),\n    }",
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_tokens_for_user",
+        "kind": 2,
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "peekOfCode": "def get_tokens_for_user(user):\n    refresh = RefreshToken.for_user(user)\n    return {\n        'refresh': str(refresh),\n        'access': str(refresh.access_token),\n    }\ndef create_default_task_item(board, user):\n    default_item = ['Todo', 'In Progress', \"Done\"]\n    for index, val in enumerate(default_item):\n        TaskItem.objects.create(title=val, board=board,user=user, position=index+1)",
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "create_default_task_item",
+        "kind": 2,
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "peekOfCode": "def create_default_task_item(board, user):\n    default_item = ['Todo', 'In Progress', \"Done\"]\n    for index, val in enumerate(default_item):\n        TaskItem.objects.create(title=val, board=board,user=user, position=index+1)",
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserManager",
+        "kind": 6,
+        "importPath": "accounts.managers",
+        "description": "accounts.managers",
+        "peekOfCode": "class CustomUserManager(BaseUserManager):\n  def create_user(self, email, password, **extra_fields):\n    if not email:\n      raise ValueError(_(\"The email must be set\"))\n    email = self.normalize_email(email)\n    user = self.model(email=email, **extra_fields)\n    user.set_password(password)\n    user.save()\n    return user\n  def create_superuser(self, email, password, **extra_fields):",
+        "detail": "accounts.managers",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class CustomUser(AbstractBaseUser, PermissionsMixin):\n  email = models.EmailField(_(\"email address\"), unique=True, max_length=254)\n  first_name = models.CharField(_(\"first name\"), max_length=50)\n  last_name = models.CharField(_(\"last name\"), max_length=50)\n  gender = models.CharField(max_length=20, null=True, blank=True)\n  phone = models.CharField(max_length=15, null=True, blank=True)\n  is_email_verified = models.BooleanField(default=False)\n  otp = models.CharField(max_length=20, blank=True, null=True)\n  otp_created_at = models.DateTimeField(default=now, blank=True, null=True)\n  is_staff = models.BooleanField(_(\"is staff\"), default=False)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = CustomUser\n    fields = ['id', 'first_name', 'last_name', 'phone', 'email', 'gender']\n# registration serializer\nclass RegistrationSerializer(serializers.ModelSerializer):\n  password2 = serializers.CharField(style={\"input_type\": 'password'}, write_only=True)\n  class Meta:\n    model = CustomUser\n    fields = ['email', 'first_name', 'last_name','gender', 'password', 'password2', 'otp']",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RegistrationSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class RegistrationSerializer(serializers.ModelSerializer):\n  password2 = serializers.CharField(style={\"input_type\": 'password'}, write_only=True)\n  class Meta:\n    model = CustomUser\n    fields = ['email', 'first_name', 'last_name','gender', 'password', 'password2', 'otp']\n    extra_kwargs = {\n        'password': {'write_only': True}\n    }\n  def save(self):\n    email = self.validated_data['email']",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "urlpatterns = [\n    path('register/', views.RegistrationAPIView.as_view(), name='register' ),\n    path('login/', views.LoginAPIView.as_view(), name='login' ),\n    path('logout/', views.LogoutAPIView.as_view(), name='logout' ),\n    path('verify-email-otp/', views.VerifyEmailOTP.as_view(), name='logout' ),\n    path('me/', views.MeAPI.as_view(), name='me' ),\n    path(\"users/\", views.users, name=\"users\"),\n    path('token-refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "RegistrationAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class RegistrationAPIView(APIView):\n  def post(self, request):\n    try:\n      data = request.data\n      otp = helpers.generate_otp(6)\n      data['otp'] = int(otp)\n      serializer = RegistrationSerializer(data=data)\n      if serializer.is_valid():\n        email = request.data['email']\n        serializer.save()",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "VerifyEmailOTP",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class VerifyEmailOTP(APIView):\n  def post(self, request):\n    try:\n      data = request.data\n      user = CustomUser.objects.filter(email=data['email'],otp=data['otp']).first()\n      if user is not None:\n        otp_expire = helpers.compare_minute(user.otp_created_at)\n        if not otp_expire:\n          user.is_email_verified = True\n          user.otp = None",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class LoginAPIView(APIView):\n  def post(self, request):\n    try:\n      rd = request.data\n      if 'email' not in rd or 'password' not in rd:\n        return Response({\n          \"success\": False,\n          'message': \"Invalid Credentials\",\n        })\n      email = rd['email']",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "LogoutAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class LogoutAPIView(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes =[JWTAuthentication]\n  def post(self, request):\n    logout(request)\n    return Response({\n        \"success\": True,\n        'message': \"Successfully Logged out!!!\",\n        })\nclass MeAPI(APIView):",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "MeAPI",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class MeAPI(APIView):\n  authentication_classes = [JWTAuthentication]\n  permission_classes = [IsAuthenticated]\n  def get(self, request):\n    try:\n      user = CustomUser.objects.filter(email=request.user.email).values('id', 'first_name', 'last_name', 'phone', 'email', 'gender').first()\n      data = UserSerializer(user, many=False).data\n      if user is not None:\n        return Response({\n          \"success\": True,",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def users(request):\n  try:\n    payload = CustomUser.objects.all().exclude(id=request.user.id)\n    serializer = UserSerializer(payload, many=True)\n    return Response({\n          \"success\": True,\n          \"status\": status.HTTP_200_OK,\n          'message': \"Users retrived successfully!!!\",\n          'data': serializer.data\n        })",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0001_initial",
+        "description": "chat.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('task_board', '0020_remove_board_uuid_board_unique_id'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Message',\n            fields=[",
+        "detail": "chat.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0002_message_message_type",
+        "description": "chat.migrations.0002_message_message_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='message',\n            name='message_type',\n            field=models.CharField(blank=True, choices=[('text', 'text'), ('media', 'media')], null=True),\n        ),",
+        "detail": "chat.migrations.0002_message_message_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0003_rename_user_message_sender",
+        "description": "chat.migrations.0003_rename_user_message_sender",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0002_message_message_type'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='message',\n            old_name='user',\n            new_name='sender',\n        ),",
+        "detail": "chat.migrations.0003_rename_user_message_sender",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0004_alter_message_message_type",
+        "description": "chat.migrations.0004_alter_message_message_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0003_rename_user_message_sender'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='message',\n            name='message_type',\n            field=models.CharField(blank=True, default='text', null=True),\n        ),",
+        "detail": "chat.migrations.0004_alter_message_message_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0005_messageattachments",
+        "description": "chat.migrations.0005_messageattachments",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0004_alter_message_message_type'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='MessageAttachments',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('image', models.ImageField(blank=True, null=True, upload_to='message/media')),",
+        "detail": "chat.migrations.0005_messageattachments",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0006_messageattachments_media_type",
+        "description": "chat.migrations.0006_messageattachments_media_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0005_messageattachments'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='messageattachments',\n            name='media_type',\n            field=models.CharField(blank=True, choices=[('file', 'file'), ('image', 'image')], max_length=10, null=True),\n        ),",
+        "detail": "chat.migrations.0006_messageattachments_media_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0007_remove_messageattachments_message_and_more",
+        "description": "chat.migrations.0007_remove_messageattachments_message_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0006_messageattachments_media_type'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='messageattachments',\n            name='message',\n        ),\n        migrations.AddField(",
+        "detail": "chat.migrations.0007_remove_messageattachments_message_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0008_remove_message_attachments_message_attachments",
+        "description": "chat.migrations.0008_remove_message_attachments_message_attachments",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0007_remove_messageattachments_message_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='message',\n            name='attachments',\n        ),\n        migrations.AddField(",
+        "detail": "chat.migrations.0008_remove_message_attachments_message_attachments",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0009_remove_message_attachments_and_more",
+        "description": "chat.migrations.0009_remove_message_attachments_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0008_remove_message_attachments_message_attachments'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='message',\n            name='attachments',\n        ),\n        migrations.AddField(",
+        "detail": "chat.migrations.0009_remove_message_attachments_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0010_alter_message_content_alter_message_message_type",
+        "description": "chat.migrations.0010_alter_message_content_alter_message_message_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0009_remove_message_attachments_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='message',\n            name='content',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "chat.migrations.0010_alter_message_content_alter_message_message_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0011_alter_messageattachments_message",
+        "description": "chat.migrations.0011_alter_messageattachments_message",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0010_alter_message_content_alter_message_message_type'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='messageattachments',\n            name='message',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='attachments', to='chat.message'),\n        ),",
+        "detail": "chat.migrations.0011_alter_messageattachments_message",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0012_rename_file_messageattachments_media_file",
+        "description": "chat.migrations.0012_rename_file_messageattachments_media_file",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0011_alter_messageattachments_message'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='messageattachments',\n            old_name='file',\n            new_name='media_file',\n        ),",
+        "detail": "chat.migrations.0012_rename_file_messageattachments_media_file",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0013_alter_messageattachments_message",
+        "description": "chat.migrations.0013_alter_messageattachments_message",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0012_rename_file_messageattachments_media_file'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='messageattachments',\n            name='message',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='attachments', to='chat.message'),\n        ),",
+        "detail": "chat.migrations.0013_alter_messageattachments_message",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chat.migrations.0014_alter_messageattachments_image_and_more",
+        "description": "chat.migrations.0014_alter_messageattachments_image_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chat', '0013_alter_messageattachments_message'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='messageattachments',\n            name='image',\n            field=models.ImageField(blank=True, null=True, upload_to='message/'),\n        ),",
+        "detail": "chat.migrations.0014_alter_messageattachments_image_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "ChatConfig",
+        "kind": 6,
+        "importPath": "chat.apps",
+        "description": "chat.apps",
+        "peekOfCode": "class ChatConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'chat'",
+        "detail": "chat.apps",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthMiddleware",
+        "kind": 6,
+        "importPath": "chat.ChannelsJWTMiddleware",
+        "description": "chat.ChannelsJWTMiddleware",
+        "peekOfCode": "class JWTAuthMiddleware:\n    def __init__(self, inner):\n        self.inner = inner\n    async def __call__(self, scope, receive, send):\n        query_string = scope.get('query_string').decode()\n        if not query_string:\n            scope['user'] = None\n            return\n        token = query_string.split('=')[1]\n        try:",
+        "detail": "chat.ChannelsJWTMiddleware",
+        "documentation": {}
+    },
+    {
+        "label": "MessageConsumer",
+        "kind": 6,
+        "importPath": "chat.consumers",
+        "description": "chat.consumers",
+        "peekOfCode": "class MessageConsumer(AsyncWebsocketConsumer):\n  # connect connection and accept new connectiong\n  async def connect(self):\n    self.room_name = self.scope['url_route']['kwargs']['room_name']\n    self.room_group_name = f'board_{self.room_name}'\n    self.user = self.scope['user']\n    if self.user is None:\n      await self.close()\n    await self.channel_layer.group_add(self.room_group_name, self.channel_name)\n    await self.accept()",
+        "detail": "chat.consumers",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "chat.consumers",
+        "description": "chat.consumers",
+        "peekOfCode": "logger = getLogger()\nclass MessageConsumer(AsyncWebsocketConsumer):\n  # connect connection and accept new connectiong\n  async def connect(self):\n    self.room_name = self.scope['url_route']['kwargs']['room_name']\n    self.room_group_name = f'board_{self.room_name}'\n    self.user = self.scope['user']\n    if self.user is None:\n      await self.close()\n    await self.channel_layer.group_add(self.room_group_name, self.channel_name)",
+        "detail": "chat.consumers",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "peekOfCode": "class Message(models.Model):\n  board = models.ForeignKey(Board, on_delete=models.CASCADE)\n  sender = models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n  content = models.TextField(blank=True, null=True)\n  message_type = models.CharField(max_length=20, blank=True, null=True)\n  created_at = models.DateTimeField(auto_now_add=True)\nclass MessageAttachments(models.Model):\n  MEDIA_TYPE = (\n    ('file', 'file'),\n    ('image', 'image'),",
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "MessageAttachments",
+        "kind": 6,
+        "importPath": "chat.models",
+        "description": "chat.models",
+        "peekOfCode": "class MessageAttachments(models.Model):\n  MEDIA_TYPE = (\n    ('file', 'file'),\n    ('image', 'image'),\n  )\n  message = models.ForeignKey(Message, on_delete=models.CASCADE, related_name='attachments')\n  image = models.ImageField(upload_to=\"message/\", blank=True, null=True)\n  media_file = models.FileField(upload_to=\"message/\", blank=True, null=True)\n  media_type = models.CharField(max_length=10, choices=MEDIA_TYPE, blank=True, null=True)",
+        "detail": "chat.models",
+        "documentation": {}
+    },
+    {
+        "label": "ws_patterns",
+        "kind": 5,
+        "importPath": "chat.routing",
+        "description": "chat.routing",
+        "peekOfCode": "ws_patterns = [\n  path(\"ws/message/<str:room_name>/\", consumers.MessageConsumer.as_asgi()),\n  re_path((r'ws/notification/(?P<receiver_id>\\w+)/$'), NotificationConsumer.as_asgi()),\n]",
+        "detail": "chat.routing",
+        "documentation": {}
+    },
+    {
+        "label": "MessageAttachmentsSerializer",
+        "kind": 6,
+        "importPath": "chat.serializers",
+        "description": "chat.serializers",
+        "peekOfCode": "class MessageAttachmentsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = MessageAttachments\n        fields =\"__all__\"\nclass MessageSerializer(serializers.ModelSerializer):\n  sender = UserSerializer()\n  attachments = MessageAttachmentsSerializer(many=True, read_only=True)\n  class Meta:\n    model = Message\n    fields = \"__all__\"",
+        "detail": "chat.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MessageSerializer",
+        "kind": 6,
+        "importPath": "chat.serializers",
+        "description": "chat.serializers",
+        "peekOfCode": "class MessageSerializer(serializers.ModelSerializer):\n  sender = UserSerializer()\n  attachments = MessageAttachmentsSerializer(many=True, read_only=True)\n  class Meta:\n    model = Message\n    fields = \"__all__\"",
+        "detail": "chat.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat.urls",
+        "description": "chat.urls",
+        "peekOfCode": "urlpatterns = [\n    path('attachments/', MessageAttachmentsView.as_view(), name='MessageAttachment'),\n]",
+        "detail": "chat.urls",
+        "documentation": {}
+    },
+    {
+        "label": "MessageAttachmentsView",
+        "kind": 6,
+        "importPath": "chat.views",
+        "description": "chat.views",
+        "peekOfCode": "class MessageAttachmentsView(APIView):\n    def post(self, request):\n        try:\n            data = request.data\n            media_type = data['media_type']\n            images = data.getlist('image')\n            files = data.getlist('file')\n            board_id = data.get('board_id')\n            board = Board.objects.get(id=board_id)\n            if board is not None:",
+        "detail": "chat.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notification.migrations.0001_initial",
+        "description": "notification.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Notification',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "notification.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notification.migrations.0002_notification_receiver_alter_notification_sender",
+        "description": "notification.migrations.0002_notification_receiver_alter_notification_sender",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notification', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='notification',\n            name='receiver',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='receivers', to=settings.AUTH_USER_MODEL),",
+        "detail": "notification.migrations.0002_notification_receiver_alter_notification_sender",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notification.migrations.0003_notification_message",
+        "description": "notification.migrations.0003_notification_message",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notification', '0002_notification_receiver_alter_notification_sender'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='notification',\n            name='message',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "notification.migrations.0003_notification_message",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationConfig",
+        "kind": 6,
+        "importPath": "notification.apps",
+        "description": "notification.apps",
+        "peekOfCode": "class NotificationConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'notification'",
+        "detail": "notification.apps",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationConsumer",
+        "kind": 6,
+        "importPath": "notification.consumers",
+        "description": "notification.consumers",
+        "peekOfCode": "class NotificationConsumer(AsyncWebsocketConsumer):\n  async def connect(self):\n    self.room_name = self.scope['url_route']['kwargs']['receiver_id']\n    self.room_group_name = f'notification_{self.room_name}'\n    await self.channel_layer.group_add(self.room_group_name, self.channel_name)\n    await self.accept()\n  # receive notification\n  async def receive(self, text_data=None, bytes_data=None):\n    sender = await self.get_user(self.scope['user'])\n    receiver = await self.get_user(self.room_name)",
+        "detail": "notification.consumers",
+        "documentation": {}
+    },
+    {
+        "label": "create_notification",
+        "kind": 2,
+        "importPath": "notification.helper",
+        "description": "notification.helper",
+        "peekOfCode": "def create_notification(user, receiver, message):\n  channel_layer = get_channel_layer()\n  notification = Notification.objects.create(sender=user, receiver=receiver, message=message)\n  data = NotificationSerializer(notification).data\n  async_to_sync(channel_layer.group_send)(\n      f'notification_{receiver.id}',\n      {\n          'type': 'send_notification',\n          'message': data\n      }",
+        "detail": "notification.helper",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "kind": 6,
+        "importPath": "notification.models",
+        "description": "notification.models",
+        "peekOfCode": "class Notification(models.Model):\n  sender = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='senders')\n  receiver = models.ForeignKey(CustomUser, on_delete=models.CASCADE,related_name='receivers', blank=True, null=True)\n  message = models.TextField(blank=True, null=True)\n  created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "notification.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSerializer",
+        "kind": 6,
+        "importPath": "notification.serializers",
+        "description": "notification.serializers",
+        "peekOfCode": "class NotificationSerializer(serializers.ModelSerializer):\n  sender = UserSerializer()\n  class Meta:\n    model = Notification\n    fields = '__all__'",
+        "detail": "notification.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "notification.urls",
+        "description": "notification.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.NotificationAPIView.as_view(), name='NotificationView'),\n    path('<int:pk>/', views.NotificationAPIView.as_view(), name='NotificationDetails'),\n]",
+        "detail": "notification.urls",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationAPIView",
+        "kind": 6,
+        "importPath": "notification.views",
+        "description": "notification.views",
+        "peekOfCode": "class NotificationAPIView(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def get(self, request):\n    try:\n      user = CustomUser.objects.filter(id=request.user.id).first()\n      if user is not None:\n        payload = Notification.objects.filter(receiver=user).order_by('created_at')\n        data = NotificationSerializer(payload, many=True).data\n      return Response({",
+        "detail": "notification.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0001_initial",
+        "description": "task_board.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Task',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "task_board.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0002_board_authorize_users",
+        "description": "task_board.migrations.0002_board_authorize_users",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='board',\n            name='authorize_users',\n            field=models.ManyToManyField(related_name='boards', to=settings.AUTH_USER_MODEL),",
+        "detail": "task_board.migrations.0002_board_authorize_users",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0003_taskitem_creator",
+        "description": "task_board.migrations.0003_taskitem_creator",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0002_board_authorize_users'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='taskitem',\n            name='creator',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "task_board.migrations.0003_taskitem_creator",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0004_task_creator_task_task_item_taskitem_board",
+        "description": "task_board.migrations.0004_task_creator_task_task_item_taskitem_board",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0003_taskitem_creator'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='task',\n            name='creator',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "task_board.migrations.0004_task_creator_task_task_item_taskitem_board",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0005_alter_board_authorize_users_alter_board_created_at_and_more",
+        "description": "task_board.migrations.0005_alter_board_authorize_users_alter_board_created_at_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0004_task_creator_task_task_item_taskitem_board'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='authorize_users',\n            field=models.ManyToManyField(blank=True, null=True, related_name='boards', to=settings.AUTH_USER_MODEL),",
+        "detail": "task_board.migrations.0005_alter_board_authorize_users_alter_board_created_at_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0006_alter_board_authorize_users",
+        "description": "task_board.migrations.0006_alter_board_authorize_users",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0005_alter_board_authorize_users_alter_board_created_at_and_more'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='authorize_users',\n            field=models.ManyToManyField(related_name='boards', to=settings.AUTH_USER_MODEL),",
+        "detail": "task_board.migrations.0006_alter_board_authorize_users",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0007_alter_board_description_alter_board_title_and_more",
+        "description": "task_board.migrations.0007_alter_board_description_alter_board_title_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0006_alter_board_authorize_users'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='description',\n            field=models.TextField(),\n        ),",
+        "detail": "task_board.migrations.0007_alter_board_description_alter_board_title_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0008_remove_board_authorize_users_board_authorize_users",
+        "description": "task_board.migrations.0008_remove_board_authorize_users_board_authorize_users",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0007_alter_board_description_alter_board_title_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='board',\n            name='authorize_users',\n        ),\n        migrations.AddField(",
+        "detail": "task_board.migrations.0008_remove_board_authorize_users_board_authorize_users",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0009_rename_creator_board_user_rename_creator_task_user_and_more",
+        "description": "task_board.migrations.0009_rename_creator_board_user_rename_creator_task_user_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0008_remove_board_authorize_users_board_authorize_users'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='board',\n            old_name='creator',\n            new_name='user',\n        ),",
+        "detail": "task_board.migrations.0009_rename_creator_board_user_rename_creator_task_user_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0010_alter_board_created_at",
+        "description": "task_board.migrations.0010_alter_board_created_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0009_rename_creator_board_user_rename_creator_task_user_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='created_at',\n            field=models.DateTimeField(auto_now_add=True),\n        ),",
+        "detail": "task_board.migrations.0010_alter_board_created_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0011_alter_taskitem_created_at_alter_taskitem_updated_at",
+        "description": "task_board.migrations.0011_alter_taskitem_created_at_alter_taskitem_updated_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0010_alter_board_created_at'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='taskitem',\n            name='created_at',\n            field=models.DateTimeField(auto_now_add=True, null=True),\n        ),",
+        "detail": "task_board.migrations.0011_alter_taskitem_created_at_alter_taskitem_updated_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0012_alter_board_title_alter_task_title_and_more",
+        "description": "task_board.migrations.0012_alter_board_title_alter_task_title_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0011_alter_taskitem_created_at_alter_taskitem_updated_at'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='title',\n            field=models.CharField(max_length=100, unique=True),\n        ),",
+        "detail": "task_board.migrations.0012_alter_board_title_alter_task_title_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0013_alter_board_title_alter_task_title_and_more",
+        "description": "task_board.migrations.0013_alter_board_title_alter_task_title_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0012_alter_board_title_alter_task_title_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='title',\n            field=models.CharField(max_length=100),\n        ),",
+        "detail": "task_board.migrations.0013_alter_board_title_alter_task_title_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0014_alter_task_banner",
+        "description": "task_board.migrations.0014_alter_task_banner",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0013_alter_board_title_alter_task_title_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='task',\n            name='banner',\n            field=models.ImageField(blank=True, null=True, upload_to='taskboard/'),\n        ),",
+        "detail": "task_board.migrations.0014_alter_task_banner",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0015_alter_task_created_at_alter_task_updated_at",
+        "description": "task_board.migrations.0015_alter_task_created_at_alter_task_updated_at",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0014_alter_task_banner'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='task',\n            name='created_at',\n            field=models.DateTimeField(auto_now_add=True, null=True),\n        ),",
+        "detail": "task_board.migrations.0015_alter_task_created_at_alter_task_updated_at",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0016_task_position_taskitem_position",
+        "description": "task_board.migrations.0016_task_position_taskitem_position",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0015_alter_task_created_at_alter_task_updated_at'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='task',\n            name='position',\n            field=models.PositiveIntegerField(blank=True, null=True),\n        ),",
+        "detail": "task_board.migrations.0016_task_position_taskitem_position",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0017_alter_board_description",
+        "description": "task_board.migrations.0017_alter_board_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0016_task_position_taskitem_position'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='description',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "task_board.migrations.0017_alter_board_description",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0018_task_description",
+        "description": "task_board.migrations.0018_task_description",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0017_alter_board_description'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='task',\n            name='description',\n            field=models.TextField(blank=True, null=True),\n        ),",
+        "detail": "task_board.migrations.0018_task_description",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0019_board_uuid",
+        "description": "task_board.migrations.0019_board_uuid",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0018_task_description'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='board',\n            name='uuid',\n            field=models.CharField(blank=True, default=uuid.uuid4, max_length=255, null=True),\n        ),",
+        "detail": "task_board.migrations.0019_board_uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0020_remove_board_uuid_board_unique_id",
+        "description": "task_board.migrations.0020_remove_board_uuid_board_unique_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0019_board_uuid'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='board',\n            name='uuid',\n        ),\n        migrations.AddField(",
+        "detail": "task_board.migrations.0020_remove_board_uuid_board_unique_id",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0021_boardinvitation",
+        "description": "task_board.migrations.0021_boardinvitation",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0020_remove_board_uuid_board_unique_id'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='BoardInvitation',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "task_board.migrations.0021_boardinvitation",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0022_alter_boardinvitation_board_alter_taskitem_board",
+        "description": "task_board.migrations.0022_alter_boardinvitation_board_alter_taskitem_board",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0021_boardinvitation'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='boardinvitation',\n            name='board',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='boards', to='task_board.board'),\n        ),",
+        "detail": "task_board.migrations.0022_alter_boardinvitation_board_alter_taskitem_board",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0023_alter_task_task_item",
+        "description": "task_board.migrations.0023_alter_task_task_item",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0022_alter_boardinvitation_board_alter_taskitem_board'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='task',\n            name='task_item',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tasks', to='task_board.taskitem'),\n        ),",
+        "detail": "task_board.migrations.0023_alter_task_task_item",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0024_tasklabel",
+        "description": "task_board.migrations.0024_tasklabel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0023_alter_task_task_item'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='TaskLabel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=20)),",
+        "detail": "task_board.migrations.0024_tasklabel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0025_taskcomment_taskattachments",
+        "description": "task_board.migrations.0025_taskcomment_taskattachments",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0024_tasklabel'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='TaskComment',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "task_board.migrations.0025_taskcomment_taskattachments",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0026_taskcomment_task",
+        "description": "task_board.migrations.0026_taskcomment_task",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0025_taskcomment_taskattachments'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='taskcomment',\n            name='task',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='task_comments', to='task_board.task'),\n        ),",
+        "detail": "task_board.migrations.0026_taskcomment_task",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0027_taskcomment_comment_type",
+        "description": "task_board.migrations.0027_taskcomment_comment_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0026_taskcomment_task'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='taskcomment',\n            name='comment_type',\n            field=models.CharField(blank=True, max_length=20, null=True),\n        ),",
+        "detail": "task_board.migrations.0027_taskcomment_comment_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0028_task_status",
+        "description": "task_board.migrations.0028_task_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0027_taskcomment_comment_type'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='task',\n            name='status',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "task_board.migrations.0028_task_status",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0029_task_authorize_users",
+        "description": "task_board.migrations.0029_task_authorize_users",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0028_task_status'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='task',\n            name='authorize_users',\n            field=django.contrib.postgres.fields.ArrayField(base_field=models.CharField(blank=True, max_length=20, null=True), blank=True, null=True, size=None),\n        ),",
+        "detail": "task_board.migrations.0029_task_authorize_users",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0030_alter_boardinvitation_status",
+        "description": "task_board.migrations.0030_alter_boardinvitation_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0029_task_authorize_users'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='boardinvitation',\n            name='status',\n            field=models.CharField(default='pending', max_length=20),\n        ),",
+        "detail": "task_board.migrations.0030_alter_boardinvitation_status",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBoardConfig",
+        "kind": 6,
+        "importPath": "task_board.apps",
+        "description": "task_board.apps",
+        "peekOfCode": "class TaskBoardConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'task_board'",
+        "detail": "task_board.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Board",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class Board(models.Model):\n  unique_id = models.CharField(max_length=255, blank=True, null=True, unique=True)\n  title = models.CharField(max_length=100)\n  description = models.TextField(blank=True, null=True)\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, )\n  authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)\n  # time stapm\n  created_at = models.DateTimeField(auto_now_add=True)\n  updated_at = models.DateTimeField(auto_now=False,null=True, blank=True)\nclass TaskItem(models.Model):",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItem",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class TaskItem(models.Model):\n  title = models.CharField(max_length=150)\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)\n  board = models.ForeignKey(Board, on_delete=models.CASCADE, null=True, blank=True, related_name='task_items')\n  position = models.PositiveIntegerField(blank=True, null=True)\n  # time stapm\n  created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)\n  updated_at = models.DateTimeField(auto_now=False, blank=True, null=True)\nclass Task(models.Model):\n  title = models.CharField(max_length=150)",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class Task(models.Model):\n  title = models.CharField(max_length=150)\n  description = models.TextField(blank=True, null=True)\n  banner = models.ImageField(upload_to='taskboard/', max_length=None, null=True, blank=True)\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)\n  task_item = models.ForeignKey(TaskItem, on_delete=models.CASCADE, null=True, blank=True, related_name='tasks')\n  position = models.PositiveIntegerField(blank=True, null=True)\n  status = models.BooleanField(default=False)\n  authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)\n  # time stapm",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "BoardInvitation",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class BoardInvitation(models.Model):\n  board = models.ForeignKey(Board, on_delete=models.CASCADE, related_name='boards')\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)\n  status = models.CharField(default='pending', max_length=20)\n  created_at = models.DateTimeField(auto_now_add=True)\nclass TaskLabel(models.Model):\n  task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='taskLabels')\n  title = models.CharField(max_length=20)\n  is_completed = models.BooleanField(default=False)\nclass TaskComment(models.Model):",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabel",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class TaskLabel(models.Model):\n  task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='taskLabels')\n  title = models.CharField(max_length=20)\n  is_completed = models.BooleanField(default=False)\nclass TaskComment(models.Model):\n  task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='task_comments', blank=True, null=True)\n  content = models.TextField()\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='comments')\n  comment_type = models.CharField(max_length=20, blank=True, null=True)\n  created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskComment",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class TaskComment(models.Model):\n  task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='task_comments', blank=True, null=True)\n  content = models.TextField()\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='comments')\n  comment_type = models.CharField(max_length=20, blank=True, null=True)\n  created_at = models.DateTimeField(auto_now_add=True)\nclass TaskAttachments(models.Model):\n  MEDIA_TYPE = (\n    ('file', 'file'),\n    ('image', 'image'),",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAttachments",
+        "kind": 6,
+        "importPath": "task_board.models",
+        "description": "task_board.models",
+        "peekOfCode": "class TaskAttachments(models.Model):\n  MEDIA_TYPE = (\n    ('file', 'file'),\n    ('image', 'image'),\n  )\n  comment = models.ForeignKey(TaskComment, on_delete=models.CASCADE, related_name='task_attachments')\n  image = models.ImageField(upload_to=\"comment/\", blank=True, null=True)\n  media_file = models.FileField(upload_to=\"comment/\", blank=True, null=True)\n  media_type = models.CharField(max_length=10, choices=MEDIA_TYPE, blank=True, null=True)",
+        "detail": "task_board.models",
+        "documentation": {}
+    },
+    {
+        "label": "BoardSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class BoardSerializer(serializers.ModelSerializer):\n  user = serializers.SerializerMethodField('get_user')\n  authorize_users = serializers.SerializerMethodField('get_authorize_users')\n  class Meta:\n    model = Board\n    fields = \"__all__\"\n    read_only_fields = ['user', 'authorize_users']\n  @staticmethod\n  def get_user(obj):\n    user = CustomUser.objects.filter(id=obj.user.id).values('id', 'first_name', 'last_name').first()",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BoardUpdateSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class BoardUpdateSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = Board\n    fields = ['title', 'description', 'authorize_users']\n  def update(self, instance, validated_data):\n    instance.title = validated_data.get('title',instance.title)\n    instance.description = validated_data.get('description',instance.description)\n    instance.authorize_users = validated_data.get('authorize_users',instance.authorize_users)\n    instance.save()\n    return instance",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAttachmentsSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class TaskAttachmentsSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = TaskAttachments\n    fields = \"__all__\"\nclass TaskCommentSerializer(serializers.ModelSerializer):\n  task_attachments = TaskAttachmentsSerializer(many=True, read_only=True)\n  user = serializers.SerializerMethodField('get_user')\n  class Meta:\n    model = TaskComment\n    fields = \"__all__\"",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCommentSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class TaskCommentSerializer(serializers.ModelSerializer):\n  task_attachments = TaskAttachmentsSerializer(many=True, read_only=True)\n  user = serializers.SerializerMethodField('get_user')\n  class Meta:\n    model = TaskComment\n    fields = \"__all__\"\n    read_only_fields = ['user',]\n  @staticmethod\n  def get_user(obj):\n    user = CustomUser.objects.get(id=obj.user.id)",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItemSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class TaskItemSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = TaskItem\n    fields = '__all__'\nclass TaskLabelSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = TaskLabel\n    fields = '__all__'\nclass TaskSerializer(serializers.ModelSerializer):\n  taskLabels = TaskLabelSerializer(many=True, read_only=True)",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabelSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class TaskLabelSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = TaskLabel\n    fields = '__all__'\nclass TaskSerializer(serializers.ModelSerializer):\n  taskLabels = TaskLabelSerializer(many=True, read_only=True)\n  task_comments = TaskCommentSerializer(many=True, read_only=True)\n  authorize_users = serializers.SerializerMethodField('get_authorize_users')\n  class Meta:\n    model = Task",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TaskSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class TaskSerializer(serializers.ModelSerializer):\n  taskLabels = TaskLabelSerializer(many=True, read_only=True)\n  task_comments = TaskCommentSerializer(many=True, read_only=True)\n  authorize_users = serializers.SerializerMethodField('get_authorize_users')\n  class Meta:\n    model = Task\n    fields = '__all__'\n    read_only_fields = ['authorize_users']\n  @staticmethod\n  def get_authorize_users(obj):",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BoardInvitationSerializer",
+        "kind": 6,
+        "importPath": "task_board.serializers",
+        "description": "task_board.serializers",
+        "peekOfCode": "class BoardInvitationSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = BoardInvitation\n    fields = '__all__'",
+        "detail": "task_board.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "email_template",
+        "kind": 2,
+        "importPath": "task_board.tasks",
+        "description": "task_board.tasks",
+        "peekOfCode": "def email_template(email,data, subject, template):\n    try:\n        message = render_to_string(template, {\n            'email' : email,\n            \"data\": data\n        })\n        send_email = EmailMultiAlternatives(subject, '', to=[email])\n        send_email.attach_alternative(message, \"text/html\")\n        send_email.send()\n    except Exception as e:",
+        "detail": "task_board.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "task_board.tasks",
+        "description": "task_board.tasks",
+        "peekOfCode": "def add(x, y):\n    return x + y\n@shared_task\ndef mul(x, y):\n    return x * y\n@shared_task\ndef xsum(numbers):\n    return sum(numbers)",
+        "detail": "task_board.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "mul",
+        "kind": 2,
+        "importPath": "task_board.tasks",
+        "description": "task_board.tasks",
+        "peekOfCode": "def mul(x, y):\n    return x * y\n@shared_task\ndef xsum(numbers):\n    return sum(numbers)",
+        "detail": "task_board.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "xsum",
+        "kind": 2,
+        "importPath": "task_board.tasks",
+        "description": "task_board.tasks",
+        "peekOfCode": "def xsum(numbers):\n    return sum(numbers)",
+        "detail": "task_board.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "task_board.urls",
+        "description": "task_board.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.TaskLabelViewSet)\nurlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),\n    path(\"task/task-comment/attachment/\", views.CommentAttachmentsView.as_view(), name=\"commentattachment\"),\n    path(\"task/assign-member/<int:task_id>/\", views.AssignTaskMember.as_view(), name=\"assignmember\"),",
+        "detail": "task_board.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "task_board.urls",
+        "description": "task_board.urls",
+        "peekOfCode": "urlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),\n    path(\"task/task-comment/attachment/\", views.CommentAttachmentsView.as_view(), name=\"commentattachment\"),\n    path(\"task/assign-member/<int:task_id>/\", views.AssignTaskMember.as_view(), name=\"assignmember\"),\n    path(\"task/task-comment/\", views.TaskCommentAPI.as_view(), name=\"taskcomment\"),\n    path('task/<int:pk>/', views.TaskAPI.as_view(), name='TaskDetailAPI'),",
+        "detail": "task_board.urls",
+        "documentation": {}
+    },
+    {
+        "label": "BoardAPIView",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class BoardAPIView(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def get(self,request, unique_id=None):\n    user = request.user\n    if unique_id is not None:\n      board = Board.objects.filter(unique_id=unique_id,authorize_users__contains=[user.id]).first()\n      if board is not None:\n        task_item = TaskItem.objects.filter(board=board).order_by('position')\n        serializer = BoardSerializer(board, many=False)",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "TaskItemAPI",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class TaskItemAPI(APIView):\n  permission_classes = [IsAuthenticated]\n  def get(self, request):\n    pass\n  def post(self, request):\n    try:\n      user = request.user\n      data = request.data\n      board = Board.objects.filter(unique_id=data['board'], authorize_users__contains=[user.id]).first()\n      print(\"board\", board)",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAPI",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class TaskAPI(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def get(self, request, pk):\n    try:\n      task = Task.objects.filter(pk=pk).first()\n      if task is not None:\n        data = TaskSerializer(task).data\n        return Response({\n            \"success\": True,",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "BoardMember",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class BoardMember(APIView):\n  def post(self, request, action_type):\n    data = request.data\n    user = request.user\n    invited_user_id = data.get('user_id')\n    unique_id = data.get('unique_id')\n    try:\n      board = Board.objects.filter(unique_id=unique_id, authorize_users__contains=[user.id]).first()\n      if action_type == 'invite-board':\n        if board is not None:",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "TaskLabelViewSet",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class TaskLabelViewSet(viewsets.ModelViewSet):\n  queryset = TaskLabel.objects.all()\n  serializer_class = TaskLabelSerializer\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\nclass TaskCommentAPI(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def post(self, request):\n    try:",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCommentAPI",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class TaskCommentAPI(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def post(self, request):\n    try:\n      user = request.user\n      data = request.data\n      data['comment_type'] = 'text'\n      task = Task.objects.filter(id=data['task']).first()\n      if task is not None:",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "AssignTaskMember",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class AssignTaskMember(APIView):\n  permission_classes = [IsAuthenticated]\n  authentication_classes = [JWTAuthentication]\n  def post(self, request, task_id):\n    try:\n      task = Task.objects.filter(id=task_id).first()\n      data = request.data\n      if task is not None:\n        user = CustomUser.objects.filter(id=data['user']).first()\n        if user is not None:",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentAttachmentsView",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class CommentAttachmentsView(APIView):\n    permission_classes = [IsAuthenticated]\n    authentication_classes = [JWTAuthentication]\n    def post(self, request):\n        try:\n            data = request.data\n            images = data.getlist('image')\n            files = data.getlist('file')\n            task_id = data.get('task')\n            task = Task.objects.get(id=task_id)",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "django_asgi_app",
+        "kind": 5,
+        "importPath": "task_management.asgi",
+        "description": "task_management.asgi",
+        "peekOfCode": "django_asgi_app = get_asgi_application()\nfrom chat.routing import ws_patterns\napplication = ProtocolTypeRouter({\n    \"http\": django_asgi_app,\n    # 'websocket' : URLRouter(ws_patterns),\n    'websocket': JWTAuthMiddleware(\n        URLRouter(\n            ws_patterns\n        )\n    ),",
+        "detail": "task_management.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "task_management.asgi",
+        "description": "task_management.asgi",
+        "peekOfCode": "application = ProtocolTypeRouter({\n    \"http\": django_asgi_app,\n    # 'websocket' : URLRouter(ws_patterns),\n    'websocket': JWTAuthMiddleware(\n        URLRouter(\n            ws_patterns\n        )\n    ),\n    # WebSocket chat handler\n    # \"websocket\": AllowedHostsOriginValidator(",
+        "detail": "task_management.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "debug_task",
+        "kind": 2,
+        "importPath": "task_management.celery",
+        "description": "task_management.celery",
+        "peekOfCode": "def debug_task(self):\n    print(f\"Request: {self.request!r}\")",
+        "detail": "task_management.celery",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "task_management.celery",
+        "description": "task_management.celery",
+        "peekOfCode": "app = Celery('task_management')\napp.conf.enable_utc = False\napp.config_from_object(settings, namespace='CELERY')\napp.autodiscover_tasks()\n@app.task(bind=True)\ndef debug_task(self):\n    print(f\"Request: {self.request!r}\")",
+        "detail": "task_management.celery",
+        "documentation": {}
+    },
+    {
+        "label": "app.conf.enable_utc",
+        "kind": 5,
+        "importPath": "task_management.celery",
+        "description": "task_management.celery",
+        "peekOfCode": "app.conf.enable_utc = False\napp.config_from_object(settings, namespace='CELERY')\napp.autodiscover_tasks()\n@app.task(bind=True)\ndef debug_task(self):\n    print(f\"Request: {self.request!r}\")",
+        "detail": "task_management.celery",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nCORS_ALLOWED_ORIGINS = [",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "SECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n]\nCORS_ALLOW_METHODS = [",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "DEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGIN_ALLOW_ALL",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = False\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',\n    'POST',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',\n    'POST',\n    'PUT',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',\n    'POST',\n    'PUT',\n]\n# Any headers you wanted to be visible by the ReactJS app.\nCORS_EXPOSE_HEADERS = [\n    'Date'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_EXPOSE_HEADERS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CORS_EXPOSE_HEADERS = [\n    'Date'\n]\n# Application definition\nINSTALLED_APPS = [\n    'daphne',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'daphne',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    # custom app",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"corsheaders.middleware.CorsMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "ROOT_URLCONF = 'task_management.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': ['templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': ['templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ASGI_APPLICATION",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "ASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"127.0.0.1\", 6379)],\n        },\n    },\n}\n# Database",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CHANNEL_LAYERS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"127.0.0.1\", 6379)],\n        },\n    },\n}\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': os.environ.get('SQL_ENGINE'),\n        'NAME': os.environ.get('DATABASE_NAME'),\n        'USER': os.environ.get('SQL_USER'),\n        'PASSWORD': os.environ.get('SQL_PASSWORD'),\n        'HOST': os.environ.get('SQL_HOST'),\n        'PORT': os.environ.get('SQL_PORT'),\n    }\n}",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ],\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ]\n}\nAUTH_USER_MODEL = \"accounts.CustomUser\"\n# Password validation",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "AUTH_USER_MODEL = \"accounts.CustomUser\"\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=30),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=30),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=30),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",\n    \"SIGNING_KEY\": os.environ.get('SIGNING_KEY'),",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "USE_TZ = True\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=30),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",\n    \"SIGNING_KEY\": os.environ.get('SIGNING_KEY'),\n    \"VERIFYING_KEY\": \"\",",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=30),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",\n    \"SIGNING_KEY\": os.environ.get('SIGNING_KEY'),\n    \"VERIFYING_KEY\": \"\",\n    \"AUDIENCE\": None,",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "FRONT_END_DOMAIN",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "FRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_BROKER_URL",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_ACCEPT_CONTENT",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_RESULT_SERIALIZER",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_TASK_SERIALIZER",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")\n# celery -A task_management worker -l info -P eventlet",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_RESULT_BACKEND",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")\n# celery -A task_management worker -l info -P eventlet\n# celery run command",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_TIMEZONE",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")\n# celery -A task_management worker -l info -P eventlet\n# celery run command",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "broker_connection_retry_on_startup",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "broker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")\n# celery -A task_management worker -l info -P eventlet\n# celery run command",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_IMPORTS",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "CELERY_IMPORTS = [\n    'task_board.tasks',\n]\nSTRIPE_SECRET_KEY=os.environ.get(\"STRIPE_SECRET_KEY\")\nSTRIPE_PUBLISHABLE_KEY=os.environ.get(\"STRIPE_PUBLISHABLE_KEY\")\n# celery -A task_management worker -l info -P eventlet\n# celery run command",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "task_management.urls",
+        "description": "task_management.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('api/v1/account/', include('accounts.urls')),\n    path('api/v1/task-board/', include('task_board.urls')),\n    path('api/v1/notification/', include('notification.urls')),\n    path('api/v1/message/', include('chat.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "task_management.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "task_management.wsgi",
+        "description": "task_management.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "task_management.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'task_management.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
