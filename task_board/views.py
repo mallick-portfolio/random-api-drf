@@ -35,6 +35,84 @@ from task_board.tasks import email_template
 from rest_framework import viewsets
 
 
+class PublicBoardAPIView(APIView):
+  def get(self,request, unique_id=None):
+    user = request.user
+    if unique_id is not None:
+      board = Board.objects.filter(unique_id=unique_id, status=False).first()
+      if board is not None:
+
+        task_item = TaskItem.objects.filter(board=board).order_by('position')
+        serializer = BoardSerializer(board, many=False)
+        data = {}
+        messages = Message.objects.filter(board=board).order_by('created_at')
+
+        data['board'] = serializer.data
+        invited_user = BoardInvitation.objects.filter(board=board)
+        data['invited_members'] = BoardInvitationSerializer(invited_user, many=True).data
+
+
+        data['task_item'] = TaskItemSerializer(task_item, many=True).data
+
+        for t in data['task_item']:
+          task = Task.objects.filter(task_item__id=t['id']).order_by('position')
+          t['tasks'] = TaskSerializer(task, many=True).data
+
+        data['messages'] = MessageSerializer(messages, many=True).data
+        return Response({
+              "success": True,
+              'message': "Board details retrived successfully!!!",
+              'data': data
+            },status=status.HTTP_200_OK)
+      else:
+        return Response({
+            "success": False,
+            'message': "Board not found with the given id!!!",
+            'error': False
+          }, status=status.HTTP_200_OK)
+    else:
+      board = Board.objects.filter(status=False)
+      serializer = BoardSerializer(board, many=True)
+      return Response({
+            "success": True,
+            "status": status.HTTP_201_CREATED,
+            'message': "Public board retrived successfully!!!",
+            'data': serializer.data
+          })
+
+
+class PublicTaskAPI(APIView):
+
+
+  def get(self, request, pk):
+    try:
+      task = Task.objects.filter(pk=pk).first()
+      if task is not None:
+        data = TaskSerializer(task).data
+        return Response({
+            "success": True,
+            'message': "Task details retrived successfully!!!",
+            'error': False,
+            "data": data
+          })
+      else:
+        return Response({
+            "success": False,
+            'message': "Task id not found",
+            'error': True
+          })
+
+    except Exception as e:
+      return Response({
+        "success": False,
+        "error": f'error is {e}'
+        })
+
+
+
+
+
+
 class BoardAPIView(APIView):
   permission_classes = [IsAuthenticated]
   authentication_classes = [JWTAuthentication]

@@ -1356,6 +1356,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -3205,6 +3221,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0031_board_status",
+        "description": "task_board.migrations.0031_board_status",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0030_alter_boardinvitation_status'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='board',\n            name='status',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "task_board.migrations.0031_board_status",
+        "documentation": {}
+    },
+    {
         "label": "TaskBoardConfig",
         "kind": 6,
         "importPath": "task_board.apps",
@@ -3218,7 +3243,7 @@
         "kind": 6,
         "importPath": "task_board.models",
         "description": "task_board.models",
-        "peekOfCode": "class Board(models.Model):\n  unique_id = models.CharField(max_length=255, blank=True, null=True, unique=True)\n  title = models.CharField(max_length=100)\n  description = models.TextField(blank=True, null=True)\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, )\n  authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)\n  # time stapm\n  created_at = models.DateTimeField(auto_now_add=True)\n  updated_at = models.DateTimeField(auto_now=False,null=True, blank=True)\nclass TaskItem(models.Model):",
+        "peekOfCode": "class Board(models.Model):\n  unique_id = models.CharField(max_length=255, blank=True, null=True, unique=True)\n  title = models.CharField(max_length=100)\n  description = models.TextField(blank=True, null=True)\n  user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, )\n  authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)\n  status = models.BooleanField(default=False)\n  # time stapm\n  created_at = models.DateTimeField(auto_now_add=True)\n  updated_at = models.DateTimeField(auto_now=False,null=True, blank=True)",
         "detail": "task_board.models",
         "documentation": {}
     },
@@ -3389,7 +3414,7 @@
         "kind": 5,
         "importPath": "task_board.urls",
         "description": "task_board.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.TaskLabelViewSet)\nurlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),\n    path(\"task/task-comment/attachment/\", views.CommentAttachmentsView.as_view(), name=\"commentattachment\"),\n    path(\"task/assign-member/<int:task_id>/\", views.AssignTaskMember.as_view(), name=\"assignmember\"),",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register('', views.TaskLabelViewSet)\nurlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('public/', views.PublicBoardAPIView.as_view(), name='PublicBoardAPIView'),\n    path('public/<str:unique_id>/', views.PublicBoardAPIView.as_view(), name='PublicBoardAPIView'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),",
         "detail": "task_board.urls",
         "documentation": {}
     },
@@ -3398,8 +3423,26 @@
         "kind": 5,
         "importPath": "task_board.urls",
         "description": "task_board.urls",
-        "peekOfCode": "urlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),\n    path(\"task/task-comment/attachment/\", views.CommentAttachmentsView.as_view(), name=\"commentattachment\"),\n    path(\"task/assign-member/<int:task_id>/\", views.AssignTaskMember.as_view(), name=\"assignmember\"),\n    path(\"task/task-comment/\", views.TaskCommentAPI.as_view(), name=\"taskcomment\"),\n    path('task/<int:pk>/', views.TaskAPI.as_view(), name='TaskDetailAPI'),",
+        "peekOfCode": "urlpatterns = [\n    path('task-label/',  include(router.urls)),\n    path('', views.BoardAPIView.as_view(), name='BoardAPI'),\n    path('public/', views.PublicBoardAPIView.as_view(), name='PublicBoardAPIView'),\n    path('public/<str:unique_id>/', views.PublicBoardAPIView.as_view(), name='PublicBoardAPIView'),\n    path('task-item/', views.TaskItemAPI.as_view(), name='TaskItemAPI'),\n    path('task-item/<int:pk>/', views.TaskItemAPI.as_view(), name='TaskItemDetailsAPI'),\n    path('task/', views.TaskAPI.as_view(), name='TaskAPI'),\n    path(\"task/task-comment/attachment/\", views.CommentAttachmentsView.as_view(), name=\"commentattachment\"),\n    path(\"task/assign-member/<int:task_id>/\", views.AssignTaskMember.as_view(), name=\"assignmember\"),",
         "detail": "task_board.urls",
+        "documentation": {}
+    },
+    {
+        "label": "PublicBoardAPIView",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class PublicBoardAPIView(APIView):\n  def get(self,request, unique_id=None):\n    user = request.user\n    if unique_id is not None:\n      board = Board.objects.filter(unique_id=unique_id, status=False).first()\n      if board is not None:\n        task_item = TaskItem.objects.filter(board=board).order_by('position')\n        serializer = BoardSerializer(board, many=False)\n        data = {}\n        messages = Message.objects.filter(board=board).order_by('created_at')",
+        "detail": "task_board.views",
+        "documentation": {}
+    },
+    {
+        "label": "PublicTaskAPI",
+        "kind": 6,
+        "importPath": "task_board.views",
+        "description": "task_board.views",
+        "peekOfCode": "class PublicTaskAPI(APIView):\n  def get(self, request, pk):\n    try:\n      task = Task.objects.filter(pk=pk).first()\n      if task is not None:\n        data = TaskSerializer(task).data\n        return Response({\n            \"success\": True,\n            'message': \"Task details retrived successfully!!!\",\n            'error': False,",
+        "detail": "task_board.views",
         "documentation": {}
     },
     {

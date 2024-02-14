@@ -9,6 +9,7 @@ class Board(models.Model):
   description = models.TextField(blank=True, null=True)
   user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, )
   authorize_users = ArrayField(models.CharField(max_length=20, null=True, blank=True), null=True, blank=True)
+  status = models.BooleanField(default=False)
 
   # time stapm
   created_at = models.DateTimeField(auto_now_add=True)
