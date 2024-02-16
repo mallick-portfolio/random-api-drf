@@ -33,6 +33,12 @@ DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
 
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'http://xxx.xxx.xxx.xxx:portNum',
+    'https://taskboard-5wgu.onrender.com']
+
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://xxx.xxx.xxx.xxx:portNum',
