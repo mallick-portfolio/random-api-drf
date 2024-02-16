@@ -51,7 +51,7 @@ six
 sqlparse
 stripe
 Twisted
-twisted-iocpsupport
+# twisted-iocpsupport
 txaio
 typing_extensions
 tzdata
