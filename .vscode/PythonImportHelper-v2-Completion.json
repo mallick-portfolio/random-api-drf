@@ -1372,6 +1372,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -2433,6 +2465,15 @@
         "documentation": {}
     },
     {
+        "label": "dj_database_url",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dj_database_url",
+        "description": "dj_database_url",
+        "detail": "dj_database_url",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -3256,6 +3297,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0032_alter_board_authorize_users_and_more",
+        "description": "task_board.migrations.0032_alter_board_authorize_users_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0031_board_status'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='authorize_users',\n            field=django.contrib.postgres.fields.ArrayField(base_field=models.CharField(blank=True, max_length=20, null=True), blank=True, default=list, null=True, size=None),\n        ),",
+        "detail": "task_board.migrations.0032_alter_board_authorize_users_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "task_board.migrations.0033_alter_board_authorize_users_and_more",
+        "description": "task_board.migrations.0033_alter_board_authorize_users_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('task_board', '0032_alter_board_authorize_users_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='board',\n            name='authorize_users',\n            field=django.contrib.postgres.fields.ArrayField(base_field=models.CharField(blank=True, max_length=20, null=True), blank=True, null=True, size=None),\n        ),",
+        "detail": "task_board.migrations.0033_alter_board_authorize_users_and_more",
+        "documentation": {}
+    },
+    {
         "label": "TaskBoardConfig",
         "kind": 6,
         "importPath": "task_board.apps",
@@ -3719,7 +3778,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': os.environ.get('SQL_ENGINE'),\n        'NAME': os.environ.get('DATABASE_NAME'),\n        'USER': os.environ.get('SQL_USER'),\n        'PASSWORD': os.environ.get('SQL_PASSWORD'),\n        'HOST': os.environ.get('SQL_HOST'),\n        'PORT': os.environ.get('SQL_PORT'),\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    'default': dj_database_url.config(\n        default='postgres://taskboard_database_fbor_user:XjIo0EKKqAuQpdhKtTFzlgNYt2xddZOK@dpg-cn7k9ovsc6pc73ca61f0-a.oregon-postgres.render.com/taskboard_database_fbor',\n    )\n}\n# DATABASES = {\n#     'default': {\n#         'ENGINE': os.environ.get('SQL_ENGINE'),\n#         'NAME': os.environ.get('DATABASE_NAME'),\n#         'USER': os.environ.get('SQL_USER'),",
         "detail": "task_management.settings",
         "documentation": {}
     },
