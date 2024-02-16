@@ -36,7 +36,7 @@ CORS_ALLOW_CREDENTIALS = False
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://xxx.xxx.xxx.xxx:portNum',
-    'https://taskboard-5wgu.onrender.com/'
+    'https://taskboard-5wgu.onrender.com'
 ]
 
 CORS_ALLOW_METHODS = [
