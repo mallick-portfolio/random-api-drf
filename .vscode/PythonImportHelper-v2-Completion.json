@@ -1468,6 +1468,14 @@
         "documentation": {}
     },
     {
+        "label": "validate_password",
+        "importPath": "django.contrib.auth.password_validation",
+        "description": "django.contrib.auth.password_validation",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.password_validation",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -2555,6 +2563,15 @@
         "documentation": {}
     },
     {
+        "label": "ChangePasswordSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class ChangePasswordSerializer(serializers.Serializer):\n    old_password = serializers.CharField(required=True)\n    new_password = serializers.CharField(required=True)\n    def validate_new_password(self, value):\n        validate_password(value)\n        return value\nclass UserSerializer(serializers.ModelSerializer):\n  class Meta:\n    model = CustomUser\n    fields = ['id', 'first_name', 'last_name', 'phone', 'email', 'gender']",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
         "label": "UserSerializer",
         "kind": 6,
         "importPath": "accounts.serializers",
@@ -2577,7 +2594,7 @@
         "kind": 5,
         "importPath": "accounts.urls",
         "description": "accounts.urls",
-        "peekOfCode": "urlpatterns = [\n    path('register/', views.RegistrationAPIView.as_view(), name='register' ),\n    path('login/', views.LoginAPIView.as_view(), name='login' ),\n    path('logout/', views.LogoutAPIView.as_view(), name='logout' ),\n    path('verify-email-otp/', views.VerifyEmailOTP.as_view(), name='logout' ),\n    path('me/', views.MeAPI.as_view(), name='me' ),\n    path(\"users/\", views.users, name=\"users\"),\n    path('token-refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('register/', views.RegistrationAPIView.as_view(), name='register' ),\n    path('login/', views.LoginAPIView.as_view(), name='login' ),\n    path('logout/', views.LogoutAPIView.as_view(), name='logout' ),\n    path('verify-email-otp/', views.VerifyEmailOTP.as_view(), name='logout' ),\n    path('me/', views.MeAPI.as_view(), name='me' ),\n    path('update-password/', views.UpdatePassword.as_view(), name='UpdatePassword' ),\n    path(\"users/\", views.users, name=\"users\"),\n    path('token-refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),\n]",
         "detail": "accounts.urls",
         "documentation": {}
     },
@@ -2623,6 +2640,15 @@
         "importPath": "accounts.views",
         "description": "accounts.views",
         "peekOfCode": "class MeAPI(APIView):\n  authentication_classes = [JWTAuthentication]\n  permission_classes = [IsAuthenticated]\n  def get(self, request):\n    try:\n      user = CustomUser.objects.filter(email=request.user.email).values('id', 'first_name', 'last_name', 'phone', 'email', 'gender').first()\n      data = UserSerializer(user, many=False).data\n      if user is not None:\n        return Response({\n          \"success\": True,",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "UpdatePassword",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class UpdatePassword(APIView):\n    permission_classes = [IsAuthenticated]\n    authentication_classes =[JWTAuthentication]\n    def get_object(self, queryset=None):\n        return self.request.user\n    def put(self, request, *args, **kwargs):\n        try:\n          self.object = self.get_object()\n          serializer = ChangePasswordSerializer(data=request.data)\n          if serializer.is_valid():",
         "detail": "accounts.views",
         "documentation": {}
     },

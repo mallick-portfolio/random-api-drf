@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .serializers import RegistrationSerializer, UserSerializer
+from .serializers import ChangePasswordSerializer, RegistrationSerializer, UserSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -183,3 +183,42 @@ class MeAPI(APIView):
           'message': "Invalid user",
           "error": f"the following error are : {e}"
           })
+
+
+class UpdatePassword(APIView):
+    permission_classes = [IsAuthenticated]
+    authentication_classes =[JWTAuthentication]
+
+    def get_object(self, queryset=None):
+        return self.request.user
+
+    def put(self, request, *args, **kwargs):
+        try:
+          self.object = self.get_object()
+          serializer = ChangePasswordSerializer(data=request.data)
+          if serializer.is_valid():
+              old_password = serializer.data.get("old_password")
+              if not self.object.check_password(old_password):
+                  return Response({
+                    "success": False,
+                    "message": "Old password not match"
+                  },status=status.HTTP_400_BAD_REQUEST)
+              self.object.set_password(serializer.data.get("new_password"))
+              self.object.save()
+              return Response({
+                "success": True,
+                "message": "Password update successfully!!!"
+              },status=status.HTTP_200_OK)
+          return Response({
+            "success": False,
+            "message": "Invalid data",
+            "error": serializer.errors
+          }, status=status.HTTP_400_BAD_REQUEST)
+
+
+        except Exception as e:
+          return Response({
+            "error": f'Error is {e}',
+            'trackback': "".join(traceback.format_exception(type(e), e, e.__traceback__))
+            })
+
