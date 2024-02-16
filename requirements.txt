@@ -42,7 +42,7 @@ pycparser
 PyJWT
 pyOpenSSL
 python-dateutil
-python-dotenv0
+python-dotenv
 pytz
 redis
 requests
