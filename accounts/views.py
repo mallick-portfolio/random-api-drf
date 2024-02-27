@@ -57,7 +57,7 @@ class RegistrationAPIView(APIView):
       if serializer.is_valid():
         email = request.data['email']
         serializer.save()
-        # email_template(email, data, 'Verify OTP Code', './email/verifyEmail.html')
+        email_template(email, data, 'Verify OTP Code', './email/verifyEmail.html')
         return Response({
           "success": True,
           "status": status.HTTP_201_CREATED,

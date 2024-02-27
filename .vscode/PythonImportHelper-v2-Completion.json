@@ -1861,6 +1861,14 @@
         "documentation": {}
     },
     {
+        "label": "email_template",
+        "importPath": "accounts.helpers",
+        "description": "accounts.helpers",
+        "isExtraImport": true,
+        "detail": "accounts.helpers",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -2398,14 +2406,6 @@
         "description": "notification.helper",
         "isExtraImport": true,
         "detail": "notification.helper",
-        "documentation": {}
-    },
-    {
-        "label": "email_template",
-        "importPath": "task_board.tasks",
-        "description": "task_board.tasks",
-        "isExtraImport": true,
-        "detail": "task_board.tasks",
         "documentation": {}
     },
     {

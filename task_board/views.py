@@ -31,7 +31,8 @@ from accounts.models import CustomUser
 from accounts import helpers
 from django.conf import settings
 from notification.helper import create_notification
-from task_board.tasks import email_template
+# from task_board.tasks import email_template
+from accounts.helpers import email_template
 from rest_framework import viewsets
 
 
@@ -533,7 +534,7 @@ class BoardMember(APIView):
 
 
 
-          # email_template.delay(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
+          email_template(invited_user.email, data,'Board invitations', './email/boardInvitation.html')
 
           return Response({
               "success": True,
