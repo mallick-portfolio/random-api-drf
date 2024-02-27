@@ -3695,7 +3695,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "SECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']",
+        "peekOfCode": "SECRET_KEY = os.environ.get('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3704,7 +3704,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "DEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',",
+        "peekOfCode": "DEBUG = True\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n    ]",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3713,7 +3713,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n    ]\nCORS_ALLOWED_ORIGINS = [",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3722,7 +3722,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com'",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = False\nALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n    ]\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3731,7 +3731,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com'\n]",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\nCSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n    ]\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3740,7 +3740,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com']\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com'\n]\nCORS_ALLOW_METHODS = [",
+        "peekOfCode": "CSRF_TRUSTED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n    ]\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3749,7 +3749,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com'\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',\n    'POST',",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    'http://localhost:3000',\n    'http://xxx.xxx.xxx.xxx:portNum',\n    'https://taskboard-5wgu.onrender.com',\n    'https://taskboard-gold.vercel.app'\n]\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'PATCH',",
         "detail": "task_management.settings",
         "documentation": {}
     },
