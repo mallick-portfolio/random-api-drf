@@ -2515,6 +2515,14 @@
         "documentation": {}
     },
     {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
@@ -3808,11 +3816,56 @@
         "documentation": {}
     },
     {
+        "label": "redis_url",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "redis_url = \"redis://red-cner4jgl5elc73dcssr0:6379\"\nparsed_url = urlparse(redis_url)\nhostname = parsed_url.hostname\nport = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "parsed_url",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "parsed_url = urlparse(redis_url)\nhostname = parsed_url.hostname\nport = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "hostname",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "hostname = parsed_url.hostname\nport = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(hostname, port)],",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "port",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "port = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(hostname, port)],\n            # \"password\": password,",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "task_management.settings",
+        "description": "task_management.settings",
+        "peekOfCode": "password = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(hostname, port)],\n            # \"password\": password,\n        },",
+        "detail": "task_management.settings",
+        "documentation": {}
+    },
+    {
         "label": "ASGI_APPLICATION",
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "ASGI_APPLICATION = 'task_management.asgi.application'\n# CHANNEL_LAYERS = {\n#     \"default\": {\n#         \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n#         \"CONFIG\": {\n#             \"hosts\": [(os.environ.get('REDIS_URL'), 6379)],\n#         },\n#     },\n# }\nCHANNEL_LAYERS = {",
+        "peekOfCode": "ASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(hostname, port)],\n            # \"password\": password,\n        },\n    },\n}",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3821,7 +3874,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        'BACKEND': \"channels.layers.InMemoryChannelLayer\"\n    }\n}\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.sqlite3',",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(hostname, port)],\n            # \"password\": password,\n        },\n    },\n}\n# Database",
         "detail": "task_management.settings",
         "documentation": {}
     },

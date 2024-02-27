@@ -15,6 +15,8 @@ import datetime
 from dotenv import load_dotenv
 import os
 from datetime import timedelta
+from urllib.parse import urlparse
+
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -116,20 +118,24 @@ TEMPLATES = [
     },
 ]
 
+
+
+redis_url = "redis://red-cner4jgl5elc73dcssr0:6379"
+parsed_url = urlparse(redis_url)
+
+hostname = parsed_url.hostname
+port = parsed_url.port
+password = parsed_url.password
 # WSGI_APPLICATION = 'task_management.wsgi.application'
 ASGI_APPLICATION = 'task_management.asgi.application'
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
-#         "CONFIG": {
-#             "hosts": [(os.environ.get('REDIS_URL'), 6379)],
-#         },
-#     },
-# }
 CHANNEL_LAYERS = {
     "default": {
-        'BACKEND': "channels.layers.InMemoryChannelLayer"
-    }
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [(hostname, port)],
+            # "password": password,
+        },
+    },
 }
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
