@@ -256,7 +256,7 @@ FRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')
 
 
 # celery setting
-CELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379
+CELERY_BROKER_URL = 'redis://red-cner4jgl5elc73dcssr0:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
