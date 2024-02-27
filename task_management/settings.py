@@ -120,7 +120,7 @@ TEMPLATES = [
 
 
 
-redis_url = "redis://red-cner4jgl5elc73dcssr0:6379"
+redis_url = "rediss://red-cner4jgl5elc73dcssr0:ryURBPjMhAvIzsFgMRXwId9LJMkqW4M0@oregon-redis.render.com:6379"
 parsed_url = urlparse(redis_url)
 
 hostname = parsed_url.hostname

@@ -3820,7 +3820,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "redis_url = \"redis://red-cner4jgl5elc73dcssr0:6379\"\nparsed_url = urlparse(redis_url)\nhostname = parsed_url.hostname\nport = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",",
+        "peekOfCode": "redis_url = \"rediss://red-cner4jgl5elc73dcssr0:ryURBPjMhAvIzsFgMRXwId9LJMkqW4M0@oregon-redis.render.com:6379\"\nparsed_url = urlparse(redis_url)\nhostname = parsed_url.hostname\nport = parsed_url.port\npassword = parsed_url.password\n# WSGI_APPLICATION = 'task_management.wsgi.application'\nASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",",
         "detail": "task_management.settings",
         "documentation": {}
     },
