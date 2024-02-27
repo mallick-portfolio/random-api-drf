@@ -3812,7 +3812,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "ASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"127.0.0.1\", 6379)],\n        },\n    },\n}\n# Database",
+        "peekOfCode": "ASGI_APPLICATION = 'task_management.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(os.environ.get('REDIS_URL'), 6379)],\n        },\n    },\n}\n# Database",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3821,7 +3821,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"127.0.0.1\", 6379)],\n        },\n    },\n}\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(os.environ.get('REDIS_URL'), 6379)],\n        },\n    },\n}\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3938,7 +3938,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3947,7 +3947,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3956,7 +3956,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3965,7 +3965,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3974,7 +3974,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3983,7 +3983,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'",
+        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -3992,7 +3992,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\nFRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -4001,7 +4001,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "FRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [",
+        "peekOfCode": "FRONT_END_DOMAIN = os.environ.get('FRONT_END_DOMAIN')\n# celery setting\nCELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [",
         "detail": "task_management.settings",
         "documentation": {}
     },
@@ -4010,7 +4010,7 @@
         "kind": 5,
         "importPath": "task_management.settings",
         "description": "task_management.settings",
-        "peekOfCode": "CELERY_BROKER_URL = 'redis://127.0.0.1:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]",
+        "peekOfCode": "CELERY_BROKER_URL = os.environ.get('REDIS_URL') + 6379\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_RESULT_SERIALIZER = 'json'\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_BACKEND = 'django-db'\nCELERY_TIMEZONE = 'Asia/Dhaka'\nbroker_connection_retry_on_startup = True\nCELERY_IMPORTS = [\n    'task_board.tasks',\n]",
         "detail": "task_management.settings",
         "documentation": {}
     },
