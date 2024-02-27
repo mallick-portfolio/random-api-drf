@@ -118,13 +118,18 @@ TEMPLATES = [
 
 # WSGI_APPLICATION = 'task_management.wsgi.application'
 ASGI_APPLICATION = 'task_management.asgi.application'
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [(os.environ.get('REDIS_URL'), 6379)],
+#         },
+#     },
+# }
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [(os.environ.get('REDIS_URL'), 6379)],
-        },
-    },
+        'BACKEND': "channels.layers.InMemoryChannelLayer"
+    }
 }
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
