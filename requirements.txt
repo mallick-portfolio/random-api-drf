@@ -35,7 +35,7 @@ kombu
 msgpack
 Pillow
 prompt-toolkit
-psycopg2
+psycopg2-binary==2.9.10
 pyasn1
 pyasn1-modules
 pycparser
