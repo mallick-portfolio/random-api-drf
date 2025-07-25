@@ -12,6 +12,7 @@ This project includes a Python script that automates the setup of a full-stack d
 4. 📁 Moves the `docker-compose.yml` file from `backend/` to the project root
 5. 💻 Opens the project in Visual Studio Code
 6. 💻 Open terminal and run "docker compose up --build" or "docker-compose up --build"
+7. Copy both .env.example to .env and update the value.
 
 ---
 
@@ -33,11 +34,17 @@ Make sure you have the following installed:
 
 ---
 
-## ⚙️ How to Use
+### 🛠️ How to Use
 
-1. Create a new Python file named `setup.py` in any folder
-2. Paste the following code into `setup.py`:
-3. Run ```python python3 setup.py ````
+1. Create a new Python file named `setup.py` in any folder.
+
+2. Paste the following code into `setup.py`.
+
+3. Run the script:
+
+```bash
+python3 setup.py
+```
 
 ```python
 import os
