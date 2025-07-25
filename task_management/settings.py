@@ -27,10 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-8$e=your-very-secret-key!123'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG')
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
@@ -38,17 +38,10 @@ CORS_ALLOW_CREDENTIALS = False
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
-    'http://xxx.xxx.xxx.xxx:portNum',
-    'https://taskboard-5wgu.onrender.com',
-    'https://taskboard-gold.vercel.app'
-
     ]
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'http://xxx.xxx.xxx.xxx:portNum',
-    'https://taskboard-5wgu.onrender.com',
-    'https://taskboard-gold.vercel.app'
 ]
 
 CORS_ALLOW_METHODS = [
@@ -120,7 +113,7 @@ TEMPLATES = [
 
 
 
-redis_url = "rediss://red-cner4jgl5elc73dcssr0:ryURBPjMhAvIzsFgMRXwId9LJMkqW4M0@oregon-redis.render.com:6379"
+redis_url = os.environ.get('REDIS_URL', 'redis://redis:6379/0')
 parsed_url = urlparse(redis_url)
 
 hostname = parsed_url.hostname
@@ -137,32 +130,17 @@ CHANNEL_LAYERS = {
         },
     },
 }
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default='postgres://taskboard_database_fbor_user:XjIo0EKKqAuQpdhKtTFzlgNYt2xddZOK@dpg-cn7k9ovsc6pc73ca61f0-a.oregon-postgres.render.com/taskboard_database_fbor',
-#     )
-# }
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DATABASE_NAME'),
-        'USER': os.environ.get('SQL_USER'),
-        'PASSWORD': os.environ.get('SQL_PASSWORD'),
-        'HOST': os.environ.get('SQL_HOST'),
-        'PORT': os.environ.get('SQL_PORT'),
+        'NAME': os.environ.get('POSTGRES_DB'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': os.environ.get('POSTGRES_PORT'),
     }
 }
 
