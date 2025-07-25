@@ -29,3 +29,6 @@ if old_folder.exists():
     print(f"✅ Renamed '{old_folder.name}' to '{new_folder.name}'")
 else:
     print("❌ Folder 'random-api-drf' does not exist.")
+
+# open code block from the previous folder
+subprocess.run(["code", "."], cwd=parent_dir)
